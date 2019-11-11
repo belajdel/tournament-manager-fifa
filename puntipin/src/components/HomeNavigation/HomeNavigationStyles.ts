@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 export const NavigationContainer = styled.nav`
-  background: #F4F4F4;
+
+`;
+
+export const ListItem = styled.li`
+  display: block;
+  background: red;
   margin-bottom: 10px;
+  padding: 12px 18px;
 `;

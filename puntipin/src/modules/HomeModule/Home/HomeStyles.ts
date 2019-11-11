@@ -1,8 +1,11 @@
 import styled from 'styled-components';
+import ChampionsLeagueImg from '../../../assets/champions-league.jpg';
 
 export const JumbotronContainer = styled.section`
-  background: #F4F4F4;
+  background: url(${ChampionsLeagueImg}) center center;
+  background-size: cover;
   padding: 20px;
+  height: 90vh;
 `;
 
 export const Button = styled.button`

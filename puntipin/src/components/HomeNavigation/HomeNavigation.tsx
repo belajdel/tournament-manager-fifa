@@ -2,28 +2,30 @@ import React from 'react';
 import {
   Link
 } from 'react-router-dom';
-import { NavigationContainer } from './HomeNavigationStyles';
+import { NavigationContainer, ListItem } from './HomeNavigationStyles';
 
 const HomeNavigation: React.FC = () => {
+
+  const ListStyle = {
+    display: 'flex'
+  };
+  
   return (
     <NavigationContainer>
-      <ul>
+      <ul style={ListStyle}>
 
-        <li>
+        <ListItem>
           <Link to="/">Home</Link>
-        </li>
-
-        <li>
+        </ListItem>
+        <ListItem>
           <Link to="/about">About</Link>
-        </li>
-
-        <li>
+        </ListItem>
+        <ListItem>
           <Link to="/login">Log in</Link>
-        </li>
-
-        <li>
+        </ListItem>
+        <ListItem>
           <Link to="/signup">Sign up</Link>
-        </li>
+        </ListItem>
       
       </ul>
     </NavigationContainer>
