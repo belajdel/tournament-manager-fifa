@@ -1,6 +1,20 @@
 import React from 'react';
+
+/**
+ * Components
+ */
+import SignupForm from '../_Shared/SignupForm/SigngupForm';
+
+/**
+ * Styles
+ */
 import { 
-  JumbotronContainer, Button 
+  JumbotronContainer, 
+  Button, 
+  JumbotronLeft,
+  JumbotronRight, 
+  JumbotronHeader,
+  JumbotronDetails
 } from './HomeStyles';
 
 const Home: React.FC = () => {
@@ -10,79 +24,30 @@ const Home: React.FC = () => {
       {/* Jumbotron */}
       <JumbotronContainer>
         
-        <div className="jumbotronLeft">
+        {/* Left Container */}
+        <JumbotronLeft>
 
-          <h1>How gamers create tournaments</h1>
-          <p>
+          <JumbotronHeader>
+            How gamers create tournaments
+          </JumbotronHeader>
+
+          <JumbotronDetails>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dicta veritatis reiciendis accusamus voluptatibus!
-          </p>
-          
-        </div>
+          </JumbotronDetails>
 
-        <div className="jumbotronRight">
+        </JumbotronLeft>
+        {/* End of Left Container */}
 
-          <section className="formContainer">
+        {/* Right Container */}
+        <JumbotronRight>
 
-            <form>
+          <SignupForm />
 
-              <div className="inputContainer">
-                <input 
-                  id="email"
-                  name="email"
-                  placeholder="Email address" 
-                  type="email" 
-                />
-              </div>
-
-              <div className="inputContainer">
-                <input 
-                  id="password" 
-                  name="password" 
-                  placeholder="Create password" 
-                  type="password" 
-                />
-              </div>
-
-              <div className="inputContainer">
-                <input 
-                  id="confirmPassword" 
-                  name="confirmPassword" 
-                  placeholder="Confirm password" 
-                  type="password" 
-                />
-              </div>
-
-              <div className="inputContainer">
-                <button>Sign up</button>
-              </div>
-
-              <footer className="inputFooterContainer">
-                <h1>or sign up with:</h1>
-                <div className="inputContainer">
-
-                  <div className="inputContainerLeft">
-
-                    <Button>
-                      Facebook
-                    </Button>
-
-                    <button>Facebook</button>
-                  </div>
-
-                  <div className="inputContainerRight">
-                    <button>Google</button>
-                  </div>
-                                    
-                </div>
-              </footer>
-              
-            </form>
-            
-          </section>
-          
-        </div>
+        </JumbotronRight>
+        {/* End of Right Container */}
 
       </JumbotronContainer>
+      {/* End of Jumbotron */}
 
     </section>
   );
