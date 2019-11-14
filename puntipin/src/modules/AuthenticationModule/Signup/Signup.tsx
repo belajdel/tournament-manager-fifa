@@ -1,42 +1,54 @@
 import React from 'react';
 
+/**
+ * Styles
+ */
+import { 
+  SignupContainer, 
+  SignupHeader, 
+  SignupFooter, 
+  SignupForm, 
+  SignupInputContainer, 
+  SignupInput, 
+  SignupButton 
+} from './SignupStyles';
+
 const Signup: React.FC = () => {
   return (
-    <section className="signupContainer">
 
-      <h1>Sign up</h1>
+    <SignupContainer>
+      <SignupHeader>Log in</SignupHeader>
 
-      <div className="formContainer">
+      <SignupForm>
 
-        <div className="inputContainer">
-          <input 
-            id="email"
-            name="email"
-            placeholder="Email address"
-            type="email"
-          />
-        </div>
+        {/* Name */}
+        <SignupInputContainer>
+          <SignupInput />
+        </SignupInputContainer>
 
-        <div className="inputContainer">
-          <input 
-            id="password"
-            name="password"
-            placeholder="Password"
-            type="password"
-          />
-        </div>
+        {/* Email */}
+        <SignupInputContainer>
+          <SignupInput />
+        </SignupInputContainer>
 
-        <footer>
+        {/* Password */}
+        <SignupInputContainer>
+          <SignupInput />
+        </SignupInputContainer>
 
-          <div className="inputContainer">
-            <button>Log in</button>
-          </div>
-          
-        </footer>
+        {/* Confirm Password */}
+        <SignupInputContainer>
+          <SignupInput />
+        </SignupInputContainer>
         
-      </div>
-      
-    </section>
+      </SignupForm>
+        <SignupButton>
+          Sign up
+        </SignupButton>
+      <SignupFooter>
+        
+      </SignupFooter>
+    </SignupContainer>
   );
 }
 

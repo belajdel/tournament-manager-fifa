@@ -1,42 +1,44 @@
 import React from 'react';
 
+/**
+ * Styles
+ */
+import { 
+  LoginContainer, 
+  LoginHeader, 
+  LoginFooter, 
+  LoginForm, 
+  LoginInputContainer, 
+  LoginInput, 
+  LoginButton 
+} from './LoginStyles';
+
 const Login: React.FC = () => {
   return (
-    <section className="loginContainer">
 
-      <h1>Log in</h1>
+    <LoginContainer>
+      <LoginHeader>Log in</LoginHeader>
 
-      <div className="formContainer">
+      <LoginForm>
 
-        <div className="inputContainer">
-          <input 
-            id="email"
-            name="email"
-            placeholder="Email address"
-            type="email"
-          />
-        </div>
+        {/* Email */}
+        <LoginInputContainer>
+          <LoginInput />
+        </LoginInputContainer>
 
-        <div className="inputContainer">
-          <input 
-            id="password"
-            name="password"
-            placeholder="Password"
-            type="password"
-          />
-        </div>
-
-        <footer>
-
-          <div className="inputContainer">
-            <button>Log in</button>
-          </div>
-          
-        </footer>
+        {/* Password */}
+        <LoginInputContainer>
+          <LoginInput />
+        </LoginInputContainer>
         
-      </div>
-      
-    </section>
+      </LoginForm>
+        <LoginButton>
+          Log in
+        </LoginButton>
+      <LoginFooter>
+        
+      </LoginFooter>
+    </LoginContainer>
   );
 }
 

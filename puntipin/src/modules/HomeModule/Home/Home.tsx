@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Components
  */
-import SignupForm from '../_Shared/SignupForm/SigngupForm';
+import SignupForm from '../_Shared/SignupForm/SignupForm';
 
 /**
  * Styles

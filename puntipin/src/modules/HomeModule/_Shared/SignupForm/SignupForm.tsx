@@ -1,8 +1,12 @@
 import React from 'react';
 
+import { 
+  Form
+} from './SignupFormStyes';
+
 const SignupForm: React.FC = () => {
   return (
-    <SignupForm>
+    <Form>
       <form>
 
         <div className="inputContainer">
@@ -57,7 +61,7 @@ const SignupForm: React.FC = () => {
         </footer>
 
         </form>
-    </SignupForm>
+    </Form>
   );
 }
 
