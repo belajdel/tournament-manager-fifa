@@ -2,7 +2,6 @@ import React from 'react';
 import { 
   NavigationContainer, 
   NavHeader,
-  NavList,
   ListItemLink,
   ListItem, 
   AuthList,

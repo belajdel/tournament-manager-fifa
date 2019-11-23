@@ -10,7 +10,6 @@ import SignupForm from '../_Shared/SignupForm/SignupForm';
  */
 import { 
   JumbotronContainer, 
-  Button, 
   JumbotronLeft,
   JumbotronRight, 
   JumbotronHeader,
