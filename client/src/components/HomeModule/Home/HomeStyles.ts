@@ -22,6 +22,7 @@ export const JumbotronRight = styled.div`
 `;
 
 export const JumbotronHeader = styled.h1`
+  color: #044B7F;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-weight: bold;
@@ -30,6 +31,7 @@ export const JumbotronHeader = styled.h1`
 
 
 export const JumbotronDetails = styled.p`
+  color: #044B7F;
   font-size: 18px;
   line-height: 2.5;
   text-indent: 20px;

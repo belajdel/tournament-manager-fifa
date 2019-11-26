@@ -8,6 +8,7 @@ export const FormHeader = styled.header`
   margin-bottom: 16px;
 
   & > h1 {
+    color: #044B7F;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     font-weight: bold;
@@ -15,6 +16,7 @@ export const FormHeader = styled.header`
   }
 
   & > p {
+    color: #044B7F;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
   }
@@ -64,6 +66,7 @@ export const GoogleButton = styled(Button)`
 
 export const FooterContainer = styled.div`
   & > p {
+    color: #044B7F;
     font-size: 18px;
     padding: 16px 0 12px 0;
     text-align: center;
