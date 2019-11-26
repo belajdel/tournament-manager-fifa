@@ -12,37 +12,35 @@ import {
  */
 import About from '../components/HomeModule/About/About';
 import Home from '../components/HomeModule/Home/Home';
-import Login from '../components/AuthenticationModule/Login/Login';
 import Settings from '../components/AccountModule/Settings/Settings';
 import Signup from '../components/AuthenticationModule/Signup/Signup';
+import ResetPassword from '../components/AuthenticationModule/ResetPassword/ResetPassword';
 
 function AppRouter() {
 	return (
-		<Router>
-      <Switch>
+    <Switch>
 
-        <Route path="/settings">
-          <Settings />
-        </Route>
+      <Route path="/settings">
+        <Settings />
+      </Route>
 
-        <Route path="/" exact>
-            <Home />
-          </Route>
+      <Route path="/reset-password">
+        <ResetPassword />
+      </Route>
 
-          <Route path="/about">
-            <About />
-          </Route>
-          
-          <Route path="/login">
-            <Login />
-          </Route>
-          
-          <Route path="/signup">
-            <Signup />
-          </Route>
-        
-      </Switch>
-    </Router>
+      <Route path="/about">
+        <About />
+      </Route>
+      
+      <Route path="/signup">
+        <Signup />
+      </Route>
+
+      <Route path="/">
+        <Home />
+      </Route>
+      
+    </Switch>
 	);
 }
 

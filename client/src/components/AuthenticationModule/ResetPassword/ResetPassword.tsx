@@ -3,43 +3,74 @@ import React from 'react';
 /**
  * Styles
  */
-import { 
-  ResetPasswordContainer, 
-  ResetPasswordHeader, 
-  ResetPasswordFooter, 
-  ResetPasswordForm, 
-  ResetPasswordInputContainer, 
-  ResetPasswordInput, 
-  ResetPasswordButton 
+import {
+  Button,
+  InputContainer,
+  Input,
+  Form,
+  Signup,
+  SignupLink,
+  ResetPasswordWrapper,
+  ResetPasswordContainer
 } from './ResetPasswordStyles';
+import { Container } from '../../../styles/Global';
 
-const ResetPassword: React.FC = () => {
-  return (
+class ResetPassword extends React.Component {
+  state = {
+    email: ''
+  }
 
-    <ResetPasswordContainer>
-      <ResetPasswordHeader>Log in</ResetPasswordHeader>
+  handleChangeInput = (e: any) => {
+    this.setState({ [e.target.name]: e.target.value });
+  }
 
-      <ResetPasswordForm>
+  handleSubmit = (e: any) => {
+    e.preventDefault();
 
-        {/* Email */}
-        <ResetPasswordInputContainer>
-          <ResetPasswordInput />
-        </ResetPasswordInputContainer>
+    /**
+     * @TODO
+     */
+  }
 
-        {/* Password */}
-        <ResetPasswordInputContainer>
-          <ResetPasswordInput />
-        </ResetPasswordInputContainer>
-        
-      </ResetPasswordForm>
-        <ResetPasswordButton>
-          Log in
-        </ResetPasswordButton>
-      <ResetPasswordFooter>
-        
-      </ResetPasswordFooter>
-    </ResetPasswordContainer>
-  );
+  render() {
+    return (
+      <ResetPasswordWrapper>
+        <Container>
+          <ResetPasswordContainer>
+
+            <Form>
+
+              <h1>Reset Password</h1>
+
+              <InputContainer>
+                <Input 
+                  name="email"
+                  onChange={this.handleChangeInput}
+                  placeholder="Email address"
+                  type="email"
+                />
+              </InputContainer>
+
+              <Signup>
+                <SignupLink to="/signup">
+                  Don't have an account?
+                </SignupLink>
+              </Signup>
+
+              <InputContainer>
+                <Button>
+                  Send reset email
+                </Button>
+              </InputContainer>
+              
+            </Form>
+
+          </ResetPasswordContainer>
+        </Container>
+      </ResetPasswordWrapper>
+    );
+  }
+  
 }
 
 export default ResetPassword;

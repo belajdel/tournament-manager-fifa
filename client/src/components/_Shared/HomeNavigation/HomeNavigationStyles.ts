@@ -1,53 +1,54 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+/**
+ * Exterior Container
+ */
 export const HomeNavContainer = styled.section`
   background: #044B7F;
 `;
 
+/**
+ * Interior Container
+ */
 export const NavContainer = styled.nav`
-  align-items: center;
-  color: white;
+  align-items: flex-end;
   display: flex;
-  height: 100px;
   justify-content: space-between;
+  color: white;
+  min-height: 100px;
 `;
 
-export const NavHeader = styled.h1`
+
+// Header - Left
+export const NavHeader = styled(Link)`
+  align-self: center;
+  display: block;
+  color: white;
   font-weight: bold;
   font-size: 40px;
-  flex: 0;
-  margin-right: 10px;
 `;
 
-// Navigator Container
-export const NavigatorContainer = styled.section`
+/**
+ * Form
+ */
+export const Form = styled.form`
+`;
+
+export const FormRow = styled.div`
   display: flex;
-  flex: 1;
-  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
 `;
 
-// Main List
-export const NavList = styled.ul`
-  display: flex;
-`;
-
-// Auth List (Right)
-export const AuthList = styled.ul`
-  align-items: center;
-  display: flex;
-`;
-
-export const ListItem = styled.li`
-  align-items: center;
-  display: block;
-  padding: 12px 18px;
-`;
-
-export const ListItemLink = styled(Link)`
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+export const ForgotPasswordLink = styled(Link)`
   color: white;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  left: 230px;
+  position: relative;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
@@ -55,15 +56,10 @@ export const ListItemLink = styled(Link)`
 `;
 
 /**
- * Form
+ * Input
  */
-export const Form = styled.form`
-  align-items: flex-end;
-  display: flex;
-`;
 
 export const InputContainer = styled.div`
-  margin: 2px;
   margin: 0 10px;
 `;
 
@@ -84,6 +80,9 @@ export const Input = styled.input`
   }
 `;
 
+/**
+ * Button
+ */
 export const Button = styled.button`
   background: none;
   border: 1px solid #01253F;
@@ -99,3 +98,4 @@ export const Button = styled.button`
     background: #044B7F;
   }
 `;
+

@@ -5,16 +5,12 @@ import React from 'react';
  */
 import { 
   Button,
-  
+  ForgotPasswordLink,  
   HomeNavContainer,
   NavContainer, 
   NavHeader,
   Form,
-  
-  ListItemLink,
-  ListItem, 
-  AuthList,
-  NavigatorContainer,
+  FormRow,
   InputContainer,
   InputLabel,
   Input
@@ -42,36 +38,44 @@ class HomeNavigation extends React.Component {
         <Container>
           <NavContainer>
   
-            <NavHeader>
+            <NavHeader to="/">
               puntipin
             </NavHeader>
   
             <Form>
-              <InputContainer>
-                <InputLabel>Email</InputLabel>
-                <Input 
-                  name="email"
-                  onChange={this.handleInputChange}
-                  placeholder="Email"
-                  type="email"
-                />
-              </InputContainer>
-              
-              <InputContainer>
-                <InputLabel>Password</InputLabel>
-                <Input 
-                  name="email"
-                  onChange={this.handleInputChange}
-                  placeholder="Password"
-                  type="password"
-                />
-              </InputContainer>
-              
-              <InputContainer>
-                <Button onClick={this.handleSubmit}>
-                  Log in
-                </Button>
-              </InputContainer>
+              <FormRow>
+                <InputContainer>
+                  <InputLabel>Email</InputLabel>
+                  <Input 
+                    name="email"
+                    onChange={this.handleInputChange}
+                    placeholder="Email"
+                    type="email"
+                  />
+                </InputContainer>
+                
+                <InputContainer>
+                  <InputLabel>Password</InputLabel>
+                  <Input 
+                    name="email"
+                    onChange={this.handleInputChange}
+                    placeholder="Password"
+                    type="password"
+                  />
+                </InputContainer>
+                
+                <InputContainer>
+                  <Button onClick={this.handleSubmit}>
+                    Log in
+                  </Button>
+                </InputContainer>
+              </FormRow>
+
+              <FormRow>
+                <ForgotPasswordLink to="/reset-password">
+                    Forgot password?
+                  </ForgotPasswordLink>
+              </FormRow>
               
             </Form>
             

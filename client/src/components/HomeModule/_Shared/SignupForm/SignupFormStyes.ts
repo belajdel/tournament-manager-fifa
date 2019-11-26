@@ -79,4 +79,5 @@ export const FooterButtonContainer = styled.div`
 export const FormSubmitContainer = styled(InputContainer)`
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 `;
