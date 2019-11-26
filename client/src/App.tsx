@@ -1,58 +1,22 @@
 import React from 'react';
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 /**
  * Components
  */
-import Home from './modules/HomeModule/Home/Home';
-import About from './modules/HomeModule/About/About';
-import Login from './modules/AuthenticationModule/Login/Login';
-import Signup from './modules/AuthenticationModule/Signup/Signup';
-import HomeNavigation from './components/HomeNavigation/HomeNavigation';
-// import AppNavigation from './components/AppNavigation/AppNavigation';
+import HomeNavigation from './components/_Shared/HomeNavigation/HomeNavigation';
+import AppRouter from './router/AppRouter';
 
 const App: React.FC = () => {
   return (
     <Router>
 
-      <section className="app">
+      {/* Navigation */}
+      <HomeNavigation />
+
+      {/* Router | Component */}
+      <AppRouter />
         
-        {/* Home Navigation */}
-        <HomeNavigation />
-
-        {/* App Navigation */}
-        {/* <AppNavigation /> */}
-
-        <section>
-          {/* A <Switch> looks through its children <Route>s and
-              renders the first one that matches the current URL. */}
-          <Switch>
-
-            <Route path="/" exact>
-              <Home />
-            </Route>
-
-            <Route path="/about">
-              <About />
-            </Route>
-            
-            <Route path="/login">
-              <Login />
-            </Route>
-            
-            <Route path="/signup">
-              <Signup />
-            </Route>
-            
-          </Switch>
-        </section>
-        
-      </section>
     </Router>
   );
 }
