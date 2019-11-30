@@ -16,11 +16,12 @@ export const AppNavigationContainer = styled.section`
  * Main Logo Link
  */
 export const NavHeader = styled(Link)`
-  flex: 0;
-  display: block;
   color: white;
-  font-weight: bold;
+  display: block;
+  flex: 0;
   font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
 `;
 
 /**
@@ -44,12 +45,27 @@ export const NavRight = styled.nav`
 
 // Link
 export const NavLink = styled(Link)`
+  color: white;
+  display: block;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  padding: 8px 12px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const LogoutButton = styled.button`
+  background: none;
   border: none;
+  color: white;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
