@@ -3,11 +3,11 @@ import {
   PUNTIPIN_GREEN,
 } from '../../../constants/COLORS';
 
-export const MyLeaderboardsWrapper = styled.section`
+export const MyChannelsWrapper = styled.section`
   background: ${PUNTIPIN_GREEN};
 `;
 
-export const MyLeaderboardsContainer = styled.section`
+export const MyChannelsContainer = styled.section`
   background: white;
   min-height: 100vh;
 `;

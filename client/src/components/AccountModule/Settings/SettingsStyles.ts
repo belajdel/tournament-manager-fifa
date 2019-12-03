@@ -15,7 +15,6 @@ export const SettingsWrapper = styled.section`
 `;
 
 export const SettingsContainer = styled.section`
-  background: white;
   display: flex;
   min-height: 100vh;
   padding: 60px 20px 30px 20px;
@@ -32,6 +31,8 @@ export const SettingsRight = styled.div`
 `;
 
 export const SettingsBox = styled.div`
+  background: white;
+  box-shadow: 0 1px 3px #666;
   border: 1px solid ${PUNTIPIN_GRAY_LIGHT};
   padding: 30px 20px;
   margin-bottom: 20px;

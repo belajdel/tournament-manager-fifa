@@ -32,6 +32,9 @@ class AppNavigation extends React.Component {
                 <NavLink to="/hub">
                   Hub
                 </NavLink>
+                <NavLink to="/channels">
+                  Channels
+                </NavLink>
                 <NavLink to="/friends">
                   Friends
                 </NavLink>

@@ -19,10 +19,15 @@ import Hub from '../components/HubModule/Hub/Hub';
 import MyFriends from '../components/AccountModule/MyFriends/MyFriends';
 import MyLeaderboards from '../components/LeaderboardsModule/MyLeaderboards/MyLeaderboards';
 import MyTournaments from '../components/TournamentModule/MyTournaments/MyTournaments';
+import MyChannels from '../components/ChannelModule/MyChannels/MyChannels';
 
 function AppRouter() {
 	return (
     <Switch>
+
+      <Route path="/channels">
+        <MyChannels />
+      </Route>
 
       <Route path="/tournaments">
         <MyTournaments />
