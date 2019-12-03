@@ -1,14 +1,19 @@
 import styled from 'styled-components';
+import { 
+  PUNTIPIN_GREEN, 
+  PUNTIPIN_GRAY_MAIN,
+  PUNTIPIN_GRAY_LIGHT, 
+} from '../../../constants/COLORS';
 
 /**
  * Main Component Container
  */
 export const CreateLocalPlayerWrapper = styled.section`
-  background: #52AA5E;
+  background: ${PUNTIPIN_GREEN};
 `;
 
 export const CreateLocalPlayerContainer = styled.section`
-  background: white;
+  background: ${PUNTIPIN_GRAY_MAIN};
   min-height: 100vh;
   padding: 20px;
 `;
@@ -20,7 +25,7 @@ export const CreateHeader = styled.header`
   display: flex;
   justify-content: center;
   position: relative;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid ${PUNTIPIN_GRAY_LIGHT};
   padding: 20px 40px;
   margin-bottom: 20px;
 
@@ -31,7 +36,6 @@ export const CreateHeader = styled.header`
 
   & > button {
     color: white;
-    background: red;
     cursor: pointer;
     display: block;
     position: absolute;
@@ -47,16 +51,16 @@ export const CreateHeader = styled.header`
  */
 export const CreateForm = styled.form`
   padding: 30px;
-  border: 1px solid blue;
 `;
 
 /**
  * Box Container
  */
 export const CreateBox = styled.div`
-  border: 1px solid red;
-  margin: 20px 0;
-  padding: 20px;
+  background: white;
+  border: 1px solid ${PUNTIPIN_GRAY_LIGHT};
+  margin-bottom: 20px;
+  padding: 40px;
   text-align: center;
 `;
 
@@ -64,19 +68,22 @@ export const CreateLabel = styled.p`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
-  font-size: 20px;
+  font-size: 24px;
 `;
 
 export const CreateLabelNumber = styled.span`
   color: blue;
   font-size: 36px;
+  margin: 0 10px;
   font-weight: bold;
 `;
 
 export const CreateLabelOptional = styled.span`
-  color: lightgray;
-  font-size: 14px;
+  color: gray;
+  font-size: 12px;
+  margin: 0 10px;
   text-transform: uppercase;
 `;
 
@@ -117,10 +124,10 @@ export const InputContainer = styled.div`
 `;
 
 export const Input = styled.input`
-  background: #F4F4F4;
-  border: 1px solid #666;
+  background: white;
+  border: 1px solid ${PUNTIPIN_GRAY_LIGHT};
   border-radius: 5px;
-  padding: 12px;
+  padding: 10px;
   margin: 0 10px;
 
   &:focus {
@@ -129,6 +136,7 @@ export const Input = styled.input`
 `;
 
 export const LinkContainer = styled(InputContainer)`
+  align-items: center;
   display: flex;
   justify-content: center;
 `;

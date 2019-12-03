@@ -12,9 +12,10 @@ const App: React.FC = () => {
   return (
     <Router>
 
-      {/* Navigation */}
+      {/* Navigation | Basic */}
       {/* <HomeNavigation /> */}
 
+      {/* Navigation | Authenticated */}
       <AppNavigation />
 
       {/* Router | Component */}

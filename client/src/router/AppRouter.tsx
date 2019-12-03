@@ -1,9 +1,7 @@
 import React from 'react';
 import {
-	BrowserRouter as Router,
 	Switch,
-	Route,
-	Link
+	Route
 } from 'react-router-dom';
 
 
@@ -17,11 +15,32 @@ import Signup from '../components/AuthenticationModule/Signup/Signup';
 import ResetPassword from '../components/AuthenticationModule/ResetPassword/ResetPassword';
 import MyLocalPlayers from '../components/AccountModule/MyLocalPlayers/MyLocalPlayers';
 import CreateLocalPlayer from '../components/AccountModule/CreateLocalPlayer/CreateLocalPlayer';
+import Hub from '../components/HubModule/Hub/Hub';
+import MyFriends from '../components/AccountModule/MyFriends/MyFriends';
+import MyLeaderboards from '../components/LeaderboardsModule/MyLeaderboards/MyLeaderboards';
+import MyTournaments from '../components/TournamentModule/MyTournaments/MyTournaments';
 
 function AppRouter() {
 	return (
     <Switch>
 
+      <Route path="/tournaments">
+        <MyTournaments />
+      </Route>
+
+      <Route path="/leaderboards">
+        <MyLeaderboards />
+      </Route>
+
+      <Route path="/friends">
+        <MyFriends />
+      </Route>
+
+      <Route path="/hub">
+        <Hub />
+      </Route>
+      
+      {/* Create Local Player */}
       <Route path="/create">
         <CreateLocalPlayer />
       </Route>

@@ -23,7 +23,7 @@ class AppNavigation extends React.Component {
         <Container>
           <AppNavigationContainer>
   
-            <NavHeader to="/">
+            <NavHeader to="/hub">
               puntipin
             </NavHeader>
   

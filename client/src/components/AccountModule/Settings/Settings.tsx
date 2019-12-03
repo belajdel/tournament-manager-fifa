@@ -4,6 +4,7 @@ import {
   BoxHeader,
   Input,
   InputContainer,
+  InputSubmitContainer,
   ThirdPartyIconContainer,
   SettingsWrapper,
   SettingsContainer,
@@ -15,7 +16,9 @@ import {
   ThirdPartyGoogle,
   ThirdPartyBox,
   ThirdPartyIcon,
-  ThirdPartyButton
+  ChangePasswordButton,
+  SelectLeague,
+  LeagueOption
 } from './SettingsStyles';
 
 const ElonMuskImg = 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg';
@@ -31,12 +34,19 @@ class Settings extends React.Component {
 
               <SettingsBox>
                 <BoxHeader>
-                  Account basics
+                  My Account
                 </BoxHeader>
                 <InputContainer>
-                  <Input 
+                  <Input
                     name="accountName"
-                    placeholder="Account name"
+                    placeholder="Name"
+                    type="text"
+                  />
+                </InputContainer>
+                <InputContainer>
+                  <Input
+                    name="location"
+                    placeholder="Location"
                     type="text"
                   />
                 </InputContainer>
@@ -48,7 +58,7 @@ class Settings extends React.Component {
                 </BoxHeader>
 
                 <InputContainer>
-                  <Input 
+                  <Input
                     name="currentEmail"
                     placeholder="Current email address"
                     type="email"
@@ -56,7 +66,7 @@ class Settings extends React.Component {
                 </InputContainer>
 
                 <InputContainer>
-                  <Input 
+                  <Input
                     name="secondaryEmail"
                     placeholder="Secondary email address"
                     type="email"
@@ -69,9 +79,9 @@ class Settings extends React.Component {
                 <BoxHeader>
                   Change Password
                 </BoxHeader>
-                
+
                 <InputContainer>
-                  <Input 
+                  <Input
                     name="currentPassword"
                     placeholder="Current password"
                     type="password"
@@ -79,7 +89,7 @@ class Settings extends React.Component {
                 </InputContainer>
 
                 <InputContainer>
-                  <Input 
+                  <Input
                     name="newPassword"
                     placeholder="Create a new password"
                     type="password"
@@ -87,22 +97,31 @@ class Settings extends React.Component {
                 </InputContainer>
 
                 <InputContainer>
-                  <Input 
+                  <Input
                     name="newPasswordConfirm"
                     placeholder="Confirm your new password"
                     type="password"
                   />
                 </InputContainer>
-                
+
+                <InputSubmitContainer>
+                  <ChangePasswordButton>
+                    Change password
+                  </ChangePasswordButton>
+                </InputSubmitContainer>
+
               </SettingsBox>
 
             </SettingsLeft>
             <SettingsRight>
 
               <SettingsBox>
+                <BoxHeader>
+                    My Preferences
+                  </BoxHeader>
 
                 <InputContainer>
-                  <Input 
+                  <Input
                     name="favoriteTeam"
                     placeholder="Favourite team"
                     type="text"
@@ -110,40 +129,68 @@ class Settings extends React.Component {
                 </InputContainer>
 
                 <InputContainer>
-                  <select>
-                    <option value="bundesliga">Bundesliga</option>
-                    <option value="mls">MLS</option>
-                    <option value="premierLeague">Premier League</option>
-                    <option value="serieA">Serie A</option>
-                  </select>
+                  <SelectLeague>
+                    <LeagueOption value="premierLeague">
+                      England Premier League
+                    </LeagueOption>
+                    <LeagueOption value="laLiga">
+                      Spain La Liga
+                    </LeagueOption>
+                    <LeagueOption value="serieA">
+                      Italy Serie A
+                    </LeagueOption>
+                    <LeagueOption value="bundesliga">
+                      Germany 1. Bundesliga
+                    </LeagueOption>
+                    <LeagueOption value="ligueOne">
+                      France Ligue 1
+                    </LeagueOption>
+                    <LeagueOption value="ligaNOS">
+                      Portugal Liga NOS
+                    </LeagueOption>
+                    <LeagueOption value="eredivisie">
+                      Holland Eredivisie
+                    </LeagueOption>
+                    <LeagueOption value="MLS">
+                      USA MLS
+                    </LeagueOption>
+                    <LeagueOption value="ligaMX">
+                      Mexico Liga MX
+                    </LeagueOption>
+                  </SelectLeague>
                 </InputContainer>
-                
+
               </SettingsBox>
 
               <SettingsBox>
                 <BoxHeader>
                   Link Accounts
                 </BoxHeader>
+
                 <ThirdPartyBox>
 
+                  {/* Facebook */}
                   <ThirdPartyContainer>
                     <header>
                       <ThirdPartyIconContainer>
-                        <ThirdPartyIcon 
+                        <ThirdPartyIcon
                           src={ElonMuskImg}
                         />
                       </ThirdPartyIconContainer>
                       <h1>Eduardo Garza</h1>
                     </header>
+
                     <ThirdPartyFacebook>
                       Unlink Facebook
                     </ThirdPartyFacebook>
+                    
                   </ThirdPartyContainer>
+                  {/* End of Facebook */}
 
+                  {/* Google */}
                   <ThirdPartyContainer>
                     <header>
                       <ThirdPartyIconContainer>
-
                       </ThirdPartyIconContainer>
                       <h1>Account name</h1>
                     </header>
@@ -151,13 +198,14 @@ class Settings extends React.Component {
                       Link Google
                     </ThirdPartyGoogle>
                   </ThirdPartyContainer>
-                  
-                </ThirdPartyBox> 
+                  {/* End of Google */}
+
+                </ThirdPartyBox>
               </SettingsBox>
 
-              
+
             </SettingsRight>
-            
+
           </SettingsContainer>
         </Container>
       </SettingsWrapper>
