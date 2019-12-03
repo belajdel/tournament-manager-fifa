@@ -15,12 +15,23 @@ import Home from '../components/HomeModule/Home/Home';
 import Settings from '../components/AccountModule/Settings/Settings';
 import Signup from '../components/AuthenticationModule/Signup/Signup';
 import ResetPassword from '../components/AuthenticationModule/ResetPassword/ResetPassword';
+import MyLocalPlayers from '../components/AccountModule/MyLocalPlayers/MyLocalPlayers';
+import CreateLocalPlayer from '../components/AccountModule/CreateLocalPlayer/CreateLocalPlayer';
 
 function AppRouter() {
 	return (
     <Switch>
 
-      <Route path="/settings">
+      <Route path="/create">
+        <CreateLocalPlayer />
+      </Route>
+      
+
+      <Route path="/local-players">
+        <MyLocalPlayers />
+      </Route>
+
+      <Route path="/account">
         <Settings />
       </Route>
 

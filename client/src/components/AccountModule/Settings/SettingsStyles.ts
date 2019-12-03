@@ -5,8 +5,7 @@ export const SettingsWrapper = styled.section`
 `;
 
 export const SettingsContainer = styled.section`
-  /* background: #044B7F; */
-  background: #F4F4F4;
+  background: white;
   display: flex;
   height: 100vh;
   padding: 40px 20px 30px 20px;
