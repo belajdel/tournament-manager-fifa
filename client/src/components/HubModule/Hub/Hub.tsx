@@ -12,6 +12,9 @@ import {
   HubContainer,
   HubLeftContainer,
   HubRightContainer,
+  HubFriendSearch,
+  SearchInput,
+  SearchButton,
 } from './HubStyles';
 import PreviewItem from '../../_Shared/PreviewButton/PreviewItem';
 
@@ -81,6 +84,72 @@ class Hub extends React.Component {
             <HubRightContainer>
 
               <HubBox>
+
+                <HubFriendSearch>
+                  <SearchInput 
+                    name="friendSearch"
+                    placeholder="Search for a friend"
+                  />
+                  <SearchButton>
+                    View All
+                  </SearchButton>
+                </HubFriendSearch>
+
+                <PreviewItem
+                  buttonHeader="Add friend"
+                  buttonDescription="Add new friend to network of channels"
+                  buttonDescriptionSecondary=""
+                  buttonCallback={() => console.log('Created')}
+                  buttonName="Add new"
+                />
+
+                <PreviewItem
+                  buttonHeader="Eduardo"
+                  buttonDescription="Last active"
+                  buttonDescriptionSecondary="Yesterday - 4:04 pm"
+                  buttonCallback={() => console.log('Created')}
+                  buttonName="View profile"
+                />
+
+                <PreviewItem
+                  buttonHeader="Andres"
+                  buttonDescription="Last active"
+                  buttonDescriptionSecondary="Yesterday - 4:04 pm"
+                  buttonCallback={() => console.log('Created')}
+                  buttonName="View profile"
+                />
+                
+                <PreviewItem
+                  buttonHeader="Thomas"
+                  buttonDescription="Last active"
+                  buttonDescriptionSecondary="Yesterday - 4:04 pm"
+                  buttonCallback={() => console.log('Created')}
+                  buttonName="View profile"
+                />
+
+                <PreviewItem
+                  buttonHeader="Jerry"
+                  buttonDescription="Last active"
+                  buttonDescriptionSecondary="Yesterday - 4:04 pm"
+                  buttonCallback={() => console.log('Created')}
+                  buttonName="View profile"
+                />
+
+                <PreviewItem
+                  buttonHeader="Mandy"
+                  buttonDescription="Last active"
+                  buttonDescriptionSecondary="Yesterday - 4:04 pm"
+                  buttonCallback={() => console.log('Created')}
+                  buttonName="View profile"
+                />
+
+                <PreviewItem
+                  buttonHeader="Nick"
+                  buttonDescription="Last active"
+                  buttonDescriptionSecondary="Yesterday - 4:04 pm"
+                  buttonCallback={() => console.log('Created')}
+                  buttonName="View profile"
+                />
                 
               </HubBox>
 

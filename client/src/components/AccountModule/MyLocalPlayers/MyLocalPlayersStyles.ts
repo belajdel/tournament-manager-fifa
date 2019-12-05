@@ -11,12 +11,16 @@ export const MyLocalPlayersContainer = styled.section`
 
 export const LocalPlayersHeader = styled.header`
   background: yellow;
-  padding: 20px;
+  padding: 40px 0 30px 0;
 
   & > header {
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    text-align: center;
   }
+
   & > section {
+    
 
   }
 `;

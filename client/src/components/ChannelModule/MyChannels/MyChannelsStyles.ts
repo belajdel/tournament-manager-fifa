@@ -10,4 +10,10 @@ export const MyChannelsWrapper = styled.section`
 export const MyChannelsContainer = styled.section`
   background: white;
   min-height: 100vh;
+  padding-top: 30px;
+
+  & > header {
+    display: flex;
+    justify-content: center;
+  }
 `;

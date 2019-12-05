@@ -10,10 +10,11 @@ import {
  */
 export const PreviewButtonContainer = styled.section`
   align-items: center;
-  border: 1px solid ${PUNTIPIN_GRAY_LIGHT};
+  border-bottom: 1px solid ${PUNTIPIN_GRAY_LIGHT};
   display: flex;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
+  min-width: 500px;
 `;
 
 export const PreviewLeftContainer = styled.section`
@@ -59,12 +60,12 @@ export const DescriptionSecondary = styled.span`
 export const PreviewButton = styled.button`
   background: ${PUNTIPIN_BLUE};
   border: none;
-  border-radius:  5px;
+  border-radius:  2px;
   color: white;
   cursor: pointer;
   display: block;
   padding: 12px 20px;
-  width: 100px;
+  width: 125px;
 
   &:hover {
     background: ${PUNTIPIN_BLUE_LIGHT};

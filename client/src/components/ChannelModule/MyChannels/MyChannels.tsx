@@ -9,6 +9,7 @@ import {
   MyChannelsContainer
 } from './MyChannelsStyles';
 import PreviewItem from '../../_Shared/PreviewButton/PreviewItem';
+import PreviewChannelItem from '../_Shared/PreviewChannelItem/PreviewChannelItem';
 
 class MyChannels extends React.Component {
   render() {
@@ -17,14 +18,20 @@ class MyChannels extends React.Component {
         <Container>
           <MyChannelsContainer>
 
+            <header>
+              <PreviewItem 
+                buttonName="Create"
+                buttonDescription="Get started by creating a new channel"
+                buttonCallback={() => console.log()}
+                buttonDescriptionSecondary=""
+                buttonHeader="Create Channel"
+              />
+            </header>
+
             <h1>MyChannels</h1>
 
-            <PreviewItem
-              buttonHeader="Create Channel"
-              buttonDescription="Get started by creating a new channel community"
-              buttonDescriptionSecondary=""
-              buttonCallback={() => console.log('Created')}
-              buttonName="Create"
+            <PreviewChannelItem 
+
             />
             
           </MyChannelsContainer>

@@ -8,10 +8,12 @@ import {
   FACEBOOK_LIGHT,
   GOOGLE,
   GOOGLE_LIGHT,
+  PUNTIPIN_GREEN_LIGHT,
 } from '../../../constants/COLORS';
 
 export const SettingsWrapper = styled.section`
-  background: ${PUNTIPIN_GREEN};
+  background: 
+    repeating-linear-gradient(191deg, ${PUNTIPIN_GREEN} 2px, ${PUNTIPIN_GREEN_LIGHT} 3px, ${PUNTIPIN_GREEN_LIGHT} 4px, ${PUNTIPIN_GREEN} 7px);
 `;
 
 export const SettingsContainer = styled.section`
