@@ -3,12 +3,11 @@ import React from 'react';
 /**
  * Styles
  */
-import { Container } from '../../../styles/Global';
+import { Container, Wrapper } from '../../../styles/Global';
 import {
   FootterButtonContainer,
   FooterButton,
   HubBox,
-  HubWrapper,
   HubContainer,
   HubLeftContainer,
   HubRightContainer,
@@ -21,7 +20,7 @@ import PreviewItem from '../../_Shared/PreviewButton/PreviewItem';
 class Hub extends React.Component {
   render() {
     return (
-      <HubWrapper>
+      <Wrapper>
         <Container>
           <HubContainer>
 
@@ -157,7 +156,7 @@ class Hub extends React.Component {
             
           </HubContainer>
         </Container>
-      </HubWrapper>
+      </Wrapper>
     );
   }
 }

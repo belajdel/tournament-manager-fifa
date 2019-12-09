@@ -3,9 +3,9 @@ import React from 'react';
 /**
  * Styles
  */
-import { Container } from '../../../styles/Global';
+import { Container, Wrapper } from '../../../styles/Global';
 import {
-  MyChannelsWrapper,
+  ChannelsList,
   MyChannelsContainer
 } from './MyChannelsStyles';
 import PreviewItem from '../../_Shared/PreviewButton/PreviewItem';
@@ -14,7 +14,7 @@ import PreviewChannelItem from '../_Shared/PreviewChannelItem/PreviewChannelItem
 class MyChannels extends React.Component {
   render() {
     return (
-      <MyChannelsWrapper>
+      <Wrapper>
         <Container>
           <MyChannelsContainer>
 
@@ -28,15 +28,17 @@ class MyChannels extends React.Component {
               />
             </header>
 
-            <h1>MyChannels</h1>
-
-            <PreviewChannelItem 
-
-            />
+            <ChannelsList>
+              <PreviewChannelItem />
+              <PreviewChannelItem />
+              <PreviewChannelItem />
+              <PreviewChannelItem />
+              <PreviewChannelItem />
+            </ChannelsList>
             
           </MyChannelsContainer>
         </Container>
-      </MyChannelsWrapper>
+      </Wrapper>
     );
   }
 }

@@ -12,20 +12,25 @@ import {
 } from '../../../constants/COLORS';
 
 export const SettingsWrapper = styled.section`
-  background: 
-    repeating-linear-gradient(191deg, ${PUNTIPIN_GREEN} 2px, ${PUNTIPIN_GREEN_LIGHT} 3px, ${PUNTIPIN_GREEN_LIGHT} 4px, ${PUNTIPIN_GREEN} 7px);
+  background: repeating-linear-gradient(191deg, ${PUNTIPIN_GREEN} 2px, ${PUNTIPIN_GREEN_LIGHT} 3px, ${PUNTIPIN_GREEN_LIGHT} 4px, ${PUNTIPIN_GREEN} 7px);
+  padding: 20px 0;
 `;
 
 export const SettingsContainer = styled.section`
-  display: flex;
   min-height: 100vh;
-  padding: 60px 20px 30px 20px;
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 992px) {
+    display: flex;
+    padding: 20px 20px 30px 20px;
+  }
+
 `;
 
 export const SettingsLeft = styled.div`
   flex: 1;
   margin: 0 20px;
-  `;
+`;
 
 export const SettingsRight = styled.div`
   flex: 1;

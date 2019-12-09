@@ -3,16 +3,15 @@ import React from 'react';
 /**
  * Styles
  */
-import { Container } from '../../../styles/Global';
+import { Container, Wrapper } from '../../../styles/Global';
 import {
-  MyFriendsWrapper,
   MyFriendsContainer
 } from './MyFriendsStyles';
 
 class MyFriends extends React.Component {
   render() {
     return (
-      <MyFriendsWrapper>
+      <Wrapper>
         <Container>
           <MyFriendsContainer>
 
@@ -20,7 +19,7 @@ class MyFriends extends React.Component {
             
           </MyFriendsContainer>
         </Container>
-      </MyFriendsWrapper>
+      </Wrapper>
     );
   }
 }

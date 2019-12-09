@@ -1,11 +1,4 @@
 import styled from 'styled-components';
-import { 
-  PUNTIPIN_GREEN,
-} from '../../../constants/COLORS';
-
-export const MyChannelsWrapper = styled.section`
-  background: ${PUNTIPIN_GREEN};
-`;
 
 export const MyChannelsContainer = styled.section`
   background: white;
@@ -15,5 +8,16 @@ export const MyChannelsContainer = styled.section`
   & > header {
     display: flex;
     justify-content: center;
+  }
+`;
+
+export const ChannelsList = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 40px;
+
+  & > * {
+    margin: 10px 20px;
+    width: calc(50% - 40px);
   }
 `;

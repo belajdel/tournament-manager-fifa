@@ -6,12 +6,16 @@ import { Link } from 'react-router-dom';
  */
 export const HomeNavContainer = styled.section`
   background: #044B7F;
+
+  background: orange;
 `;
 
 /**
  * Interior Container
  */
 export const NavContainer = styled.nav`
+  background: pink;
+
   align-items: flex-end;
   display: flex;
   justify-content: space-between;

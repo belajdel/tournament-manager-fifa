@@ -57,11 +57,11 @@ class PreviewChannelItem extends React.Component {
             Members
           </FooterHeader>
           <FooterMembersList>
-            <FooterMember>Account name</FooterMember>
-            <FooterMember>Account name</FooterMember>
-            <FooterMember>Account name</FooterMember>
-            <FooterMember>Account name</FooterMember>
-            <FooterMember>Account name</FooterMember>
+            <FooterMember to="/">Account name</FooterMember>
+            <FooterMember to="/">Account name</FooterMember>
+            <FooterMember to="/">Account name</FooterMember>
+            <FooterMember to="/">Account name</FooterMember>
+            <FooterMember to="/">Account name</FooterMember>
           </FooterMembersList>
         </ChannelItemFooter>
         

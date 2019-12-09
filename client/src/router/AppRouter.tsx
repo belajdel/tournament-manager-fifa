@@ -20,10 +20,16 @@ import MyFriends from '../components/AccountModule/MyFriends/MyFriends';
 import MyLeaderboards from '../components/LeaderboardsModule/MyLeaderboards/MyLeaderboards';
 import MyTournaments from '../components/TournamentModule/MyTournaments/MyTournaments';
 import MyChannels from '../components/ChannelModule/MyChannels/MyChannels';
+import MyProfile from '../components/AccountModule/MyProfile/MyProfile';
 
 function AppRouter() {
 	return (
     <Switch>
+
+      {/* Left Navigation (Main) */}
+      <Route path="/hub">
+        <Hub />
+      </Route>
 
       <Route path="/channels">
         <MyChannels />
@@ -33,17 +39,24 @@ function AppRouter() {
         <MyTournaments />
       </Route>
 
+      {/* Right Navigation (Main) */}
+      <Route path="/friends">
+        <MyFriends />
+      </Route>
+      
       <Route path="/leaderboards">
         <MyLeaderboards />
       </Route>
 
-      <Route path="/friends">
-        <MyFriends />
+      <Route path="/profile">
+        <MyProfile />
+      </Route>
+      
+      <Route path="/settings">
+        <Settings />
       </Route>
 
-      <Route path="/hub">
-        <Hub />
-      </Route>
+      {/* Other Components */}
       
       {/* Create Local Player */}
       <Route path="/create">
@@ -53,10 +66,6 @@ function AppRouter() {
 
       <Route path="/local-players">
         <MyLocalPlayers />
-      </Route>
-
-      <Route path="/account">
-        <Settings />
       </Route>
 
       <Route path="/reset-password">

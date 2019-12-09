@@ -3,16 +3,15 @@ import React from 'react';
 /**
  * Styles
  */
-import { Container } from '../../../styles/Global';
+import { Container, Wrapper } from '../../../styles/Global';
 import {
-  MyLeaderboardsWrapper,
   MyLeaderboardsContainer
 } from './MyLeaderboardsStyles';
 
 class MyLeaderboards extends React.Component {
   render() {
     return (
-      <MyLeaderboardsWrapper>
+      <Wrapper>
         <Container>
           <MyLeaderboardsContainer>
 
@@ -20,7 +19,7 @@ class MyLeaderboards extends React.Component {
             
           </MyLeaderboardsContainer>
         </Container>
-      </MyLeaderboardsWrapper>
+      </Wrapper>
     );
   }
 }

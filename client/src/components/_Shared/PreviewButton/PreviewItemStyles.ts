@@ -33,23 +33,24 @@ export const PreviewIcon = styled.div`
   background: ${PUNTIPIN_BLUE};
   border-radius: 50%;
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
 `;
 
 export const PreviewContentContainer = styled.header`
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  margin: 10px 0 10px 16px;
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 4px 0;
 
   & > h1 {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 `;
 
 export const PreviewContentDescription = styled.p`
   color: #666;
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 10px;
 `;
 
@@ -60,12 +61,13 @@ export const DescriptionSecondary = styled.span`
 export const PreviewButton = styled.button`
   background: ${PUNTIPIN_BLUE};
   border: none;
-  border-radius:  2px;
+  border-radius: 3px;
   color: white;
   cursor: pointer;
   display: block;
-  padding: 12px 20px;
-  width: 125px;
+  padding: 6px 8px;
+  font-size: 14px;
+  width: 100px;
 
   &:hover {
     background: ${PUNTIPIN_BLUE_LIGHT};

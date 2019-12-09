@@ -1,20 +1,11 @@
 import styled from 'styled-components';
 import { 
-  PUNTIPIN_GREEN, PUNTIPIN_GREEN_LIGHT, PUNTIPIN_GRAY_LIGHT 
+  PUNTIPIN_GRAY_LIGHT 
 } from '../../../constants/COLORS';
-
-/**
- * Main Wrapper / Container
- */
-export const HubWrapper = styled.section`
-  background: 
-    repeating-linear-gradient(191deg, ${PUNTIPIN_GREEN} 2px, ${PUNTIPIN_GREEN_LIGHT} 3px, ${PUNTIPIN_GREEN_LIGHT} 4px, ${PUNTIPIN_GREEN} 7px);
-  padding-top: 50px;
-`;
 
 export const HubContainer = styled.section`
   display: flex;
-  min-height: 100vh;
+  padding-top: 20px;
 `;
 
 /**
@@ -47,11 +38,12 @@ export const FootterButtonContainer = styled.div`
 export const FooterButton = styled.button`
   background: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   display: block;
   color: white;
   cursor: pointer;
-  padding: 12px 20px;
+  font-size: 14px;
+  padding: 6px 16px;
 
   &:hover {
     background: #123;

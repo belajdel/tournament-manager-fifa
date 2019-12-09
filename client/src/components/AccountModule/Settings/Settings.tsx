@@ -1,12 +1,15 @@
 import React from 'react';
-import { Container } from '../../../styles/Global';
+
+/**
+ * Styles
+ */
+import { Container, Wrapper } from '../../../styles/Global';
 import {
   BoxHeader,
   Input,
   InputContainer,
   InputSubmitContainer,
   ThirdPartyIconContainer,
-  SettingsWrapper,
   SettingsContainer,
   SettingsLeft,
   SettingsRight,
@@ -26,7 +29,7 @@ const ElonMuskImg = 'https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%
 class Settings extends React.Component {
   render() {
     return (
-      <SettingsWrapper>
+      <Wrapper>
         <Container>
           <SettingsContainer>
 
@@ -208,7 +211,7 @@ class Settings extends React.Component {
 
           </SettingsContainer>
         </Container>
-      </SettingsWrapper>
+      </Wrapper>
     );
   }
 }

@@ -1,15 +1,40 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { PUNTIPIN_BLUE_LIGHT, PUNTIPIN_BLUE } from '../../../constants/COLORS';
 
 export const AppNavigationWrapper = styled.section`
   background: #044B7F;
 `;
 
 export const AppNavigationContainer = styled.section`
+
   color: white;
   display: flex;
   align-items: center;
   height: 60px;
+
+  /* Extra small devices (portrait phones, less than 576px) */
+  /* No media query for xs since this is the default in Bootstrap */
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    
+  }
 `;
 
 /**
@@ -19,7 +44,7 @@ export const NavHeader = styled(Link)`
   color: white;
   display: block;
   flex: 0;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   margin-right: 10px;
 `;
@@ -41,31 +66,4 @@ export const NavLeft = styled.nav`
 // Right
 export const NavRight = styled.nav`
   display: flex;
-`;
-
-// Link
-export const NavLink = styled(Link)`
-  color: white;
-  display: block;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 8px 12px;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-export const LogoutButton = styled.button`
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  margin-left: 10px;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `;

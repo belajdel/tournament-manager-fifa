@@ -1,11 +1,28 @@
 import React from 'react';
 
-const CreateTournament: React.FC = () => {
-  return (
-    <div className="CreateTournament">
-      <h1>CreateTournament</h1>
-    </div>
-  );
+/**
+ * Styles
+ */
+import { Container } from '../../../styles/Global';
+import {
+  CreateTournamentContainer,
+  CreateTournamentWrapper,
+} from './CreateTournamentStyles';
+
+class CreateTournament extends React.Component {
+  render() {
+    return (
+      <CreateTournamentWrapper>
+        <Container>
+          <CreateTournamentContainer>
+
+            
+            
+          </CreateTournamentContainer>
+        </Container>
+      </CreateTournamentWrapper>
+    );
+  }
 }
 
 export default CreateTournament;

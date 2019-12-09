@@ -1,11 +1,26 @@
 import React from 'react';
 
-const Channel: React.FC = () => {
-  return (
-    <div className="Channel">
-      <h1>Channel</h1>
-    </div>
-  );
+/**
+ * Styles
+ */
+import { Container } from '../../../styles/Global';
+import {
+  ChannelContainer,
+  ChannelWrapper,
+} from './ChannelStyles';
+
+class Channel extends React.Component {
+  render() {
+    return (
+      <ChannelWrapper>
+        <Container>
+          <ChannelContainer>
+
+          </ChannelContainer>
+        </Container>
+      </ChannelWrapper>
+    );
+  }
 }
 
 export default Channel;
