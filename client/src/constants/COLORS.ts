@@ -18,3 +18,12 @@ export const FACEBOOK_LIGHT         = '#4B76CC';
 
 export const GOOGLE                 = '#DB4437';
 export const GOOGLE_LIGHT           = '#F24B3C';
+
+export const PRIMARY                = '#094D92';
+export const SECONDARY              = '#3993DD';
+export const SUCCESS                = '#04724D';
+export const DANGER                 = '#DB504A';
+export const WARNING                = '#F5E663';
+export const INFO                   = '#5171A5';
+export const LIGHT                  = '#D8DDEF';
+export const DARK                   = '#252627';

@@ -2,22 +2,28 @@ import styled from 'styled-components';
 import { PUNTIPIN_BLUE_LIGHT, PUNTIPIN_BLUE } from '../../../../constants/COLORS';
 
 export const AccountNavContainer = styled.button`
-  background: none;
-  border: 1px solid white;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  padding: 6px 10px;
-  margin-left: 10px;
-  width: 175px;
+  display: none;
 
-  &:hover {
-    background: ${PUNTIPIN_BLUE_LIGHT};
-  }
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    display: block;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px solid #666;
+    cursor: pointer;
+    position: relative;
+    padding: 6px 20px 6px 10px;
+    margin-left: 10px;
+    width: 175px;
 
-  &:focus {
-    outline: none;
+    &:hover {
+      background: ${PUNTIPIN_BLUE_LIGHT};
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 `;
 
@@ -31,6 +37,7 @@ export const AccountNavDisplay = styled.nav`
 
 export const DisplayIcon = styled.div`
   background: #EAD94C;
+  box-shadow: 0 1px 1px solid #666;
   border-radius: 5px;
   display: block;
   height: 25px;
@@ -57,6 +64,7 @@ export const AccountNavDropdown = styled.nav`
   width: 100%;
   left: 0;
   right: 0;
+  z-index: 5;
 `;
 
 export const DropdownHeader = styled.h1`

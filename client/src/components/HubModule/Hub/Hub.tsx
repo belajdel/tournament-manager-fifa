@@ -5,7 +5,7 @@ import React from 'react';
  */
 import { Container, Wrapper } from '../../../styles/Global';
 import {
-  FootterButtonContainer,
+  FooterButtonContainer,
   FooterButton,
   HubBox,
   HubContainer,
@@ -14,8 +14,15 @@ import {
   HubFriendSearch,
   SearchInput,
   SearchButton,
+  SearchIcon
 } from './HubStyles';
-import PreviewItem from '../../_Shared/PreviewButton/PreviewItem';
+import PreviewItem from '../../_Shared/Buttons/PreviewButton/PreviewItem';
+
+/**
+ * Icons
+ */
+import Icon from '../../../assets/icons/icon-right-arrow.png';
+import ColorTypes from '../../../models/ColorTypes';
 
 class Hub extends React.Component {
   render() {
@@ -34,6 +41,7 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary=""
                   buttonCallback={() => console.log('Created')}
                   buttonName="Create"
+                  buttonColor={ColorTypes.primary}
                 />
 
                 <PreviewItem
@@ -42,13 +50,14 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
                   buttonCallback={() => console.log('Created')}
                   buttonName="View"
+                  buttonColor={ColorTypes.secondary}
                 />
 
-                <FootterButtonContainer>
+                <FooterButtonContainer>
                   <FooterButton>
                     View All
                   </FooterButton>
-                </FootterButtonContainer>
+                </FooterButtonContainer>
                 
               </HubBox>
 
@@ -60,6 +69,7 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary=""
                   buttonCallback={() => console.log('Created')}
                   buttonName="Create"
+                  buttonColor={ColorTypes.warning}
                 />
 
                 <PreviewItem
@@ -68,13 +78,14 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
                   buttonCallback={() => console.log('Created')}
                   buttonName="View"
+                  buttonColor={ColorTypes.danger}
                 />
 
-                <FootterButtonContainer>
+                <FooterButtonContainer>
                   <FooterButton>
                     View All
                   </FooterButton>
-                </FootterButtonContainer>
+                </FooterButtonContainer>
                 
               </HubBox>
       
@@ -90,7 +101,10 @@ class Hub extends React.Component {
                     placeholder="Search for a friend"
                   />
                   <SearchButton>
-                    View All
+                    <SearchIcon 
+                      src={Icon}
+                      alt="searchIcon"
+                    />
                   </SearchButton>
                 </HubFriendSearch>
 
@@ -100,7 +114,8 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary=""
                   buttonCallback={() => console.log('Created')}
                   buttonName="Add new"
-                />
+                  buttonColor={ColorTypes.danger}
+                  />
 
                 <PreviewItem
                   buttonHeader="Eduardo"
@@ -108,6 +123,7 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
                   buttonCallback={() => console.log('Created')}
                   buttonName="View profile"
+                  buttonColor={ColorTypes.primary}
                 />
 
                 <PreviewItem
@@ -116,6 +132,7 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
                   buttonCallback={() => console.log('Created')}
                   buttonName="View profile"
+                  buttonColor={ColorTypes.warning}
                 />
                 
                 <PreviewItem
@@ -124,6 +141,7 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
                   buttonCallback={() => console.log('Created')}
                   buttonName="View profile"
+                  buttonColor={ColorTypes.success}
                 />
 
                 <PreviewItem
@@ -132,6 +150,7 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
                   buttonCallback={() => console.log('Created')}
                   buttonName="View profile"
+                  buttonColor={ColorTypes.secondary}
                 />
 
                 <PreviewItem
@@ -140,6 +159,7 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
                   buttonCallback={() => console.log('Created')}
                   buttonName="View profile"
+                  buttonColor={ColorTypes.link}
                 />
 
                 <PreviewItem
@@ -148,7 +168,14 @@ class Hub extends React.Component {
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
                   buttonCallback={() => console.log('Created')}
                   buttonName="View profile"
+                  buttonColor={ColorTypes.success}
                 />
+
+                <FooterButtonContainer>
+                  <FooterButton>
+                    View All
+                  </FooterButton>
+                </FooterButtonContainer>
                 
               </HubBox>
 

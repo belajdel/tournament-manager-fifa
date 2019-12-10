@@ -8,8 +8,8 @@ import {
   ChannelsList,
   MyChannelsContainer
 } from './MyChannelsStyles';
-import PreviewItem from '../../_Shared/PreviewButton/PreviewItem';
-import PreviewChannelItem from '../_Shared/PreviewChannelItem/PreviewChannelItem';
+import PreviewItem from '../../_Shared/Buttons/PreviewButton/PreviewItem';
+import ColorTypes from '../../../models/ColorTypes';
 
 class MyChannels extends React.Component {
   render() {
@@ -19,21 +19,17 @@ class MyChannels extends React.Component {
           <MyChannelsContainer>
 
             <header>
-              <PreviewItem 
-                buttonName="Create"
-                buttonDescription="Get started by creating a new channel"
-                buttonCallback={() => console.log()}
-                buttonDescriptionSecondary=""
-                buttonHeader="Create Channel"
-              />
+              <PreviewItem
+                  buttonHeader="Create Channel"
+                  buttonDescription="Get started by creating a new channel community"
+                  buttonDescriptionSecondary=""
+                  buttonCallback={() => console.log('Created')}
+                  buttonName="Create"
+                  buttonColor={ColorTypes.primary}
+                />
             </header>
 
             <ChannelsList>
-              <PreviewChannelItem />
-              <PreviewChannelItem />
-              <PreviewChannelItem />
-              <PreviewChannelItem />
-              <PreviewChannelItem />
             </ChannelsList>
             
           </MyChannelsContainer>

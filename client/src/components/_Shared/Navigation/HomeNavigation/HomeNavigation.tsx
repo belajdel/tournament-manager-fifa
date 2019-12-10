@@ -15,7 +15,7 @@ import {
   InputLabel,
   Input
 } from './HomeNavigationStyles';
-import { Container } from '../../../styles/Global';
+import { Container } from '../../../../styles/Global';
 
 class HomeNavigation extends React.Component {
   state = {

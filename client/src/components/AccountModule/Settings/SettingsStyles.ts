@@ -1,28 +1,21 @@
 import styled from 'styled-components';
 import { 
-  PUNTIPIN_GREEN, 
   PUNTIPIN_GRAY_LIGHT,
   PUNTIPIN_BLUE_LIGHT,
   PUNTIPIN_BLUE,
   FACEBOOK,
   FACEBOOK_LIGHT,
   GOOGLE,
-  GOOGLE_LIGHT,
-  PUNTIPIN_GREEN_LIGHT,
+  GOOGLE_LIGHT
 } from '../../../constants/COLORS';
-
-export const SettingsWrapper = styled.section`
-  background: repeating-linear-gradient(191deg, ${PUNTIPIN_GREEN} 2px, ${PUNTIPIN_GREEN_LIGHT} 3px, ${PUNTIPIN_GREEN_LIGHT} 4px, ${PUNTIPIN_GREEN} 7px);
-  padding: 20px 0;
-`;
 
 export const SettingsContainer = styled.section`
   min-height: 100vh;
+  padding: 20px 20px 30px 20px;
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 992px) {
     display: flex;
-    padding: 20px 20px 30px 20px;
   }
 
 `;

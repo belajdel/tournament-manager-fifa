@@ -1,4 +1,14 @@
 import React from 'react';
+
+/**
+ * Components
+ */
+import NavItem from './NavItem/NavItem';
+import AccountNavigation from '../AccountNavigation/AccountNavigation';
+
+/**
+ * Styles
+ */
 import {
   AppNavigationWrapper,
   AppNavigationContainer,
@@ -6,22 +16,37 @@ import {
   NavMain,
   NavLeft,
   NavRight,
+  NavHamburger,
+  HamburgerLine,
 } from './AppNavigationStyles';
-import { Container } from '../../../styles/Global';
+import { Container } from '../../../../styles/Global';
 
 /**
  * Icons
  */
-import HubIcon from '../../../assets/icons/icon-hub.png';
-import ChannelsIcon from '../../../assets/icons/icon-channels.png';
-import FriendsIcon from '../../../assets/icons/icon-friends.png';
-import LeaderboardsIcon from '../../../assets/icons/icon-leaderboards-1.png';
-import TournamentsIcon from '../../../assets/icons/icon-tournaments.png';
-import NavItem from './NavItem/NavItem';
-import AccountNavigation from './AccountNavigation/AccountNavigation';
+import HubIcon from '../../../../assets/icons/icon-hub.png';
+import ChannelsIcon from '../../../../assets/icons/icon-channels.png';
+import FriendsIcon from '../../../../assets/icons/icon-friends.png';
+import LeaderboardsIcon from '../../../../assets/icons/icon-leaderboards-1.png';
+import TournamentsIcon from '../../../../assets/icons/icon-tournaments.png';
+import MobileNavigation from '../MobileNavigation/MobileNavigation';
 
-class AppNavigation extends React.Component {
+interface AppNavigationProps {
 
+}
+
+interface AppNavigationState {
+  mobileActive: boolean;
+}
+
+class AppNavigation extends React.Component<AppNavigationProps, AppNavigationState> {
+  constructor(props: AppNavigationProps) {
+    super(props);
+    this.state = {
+      mobileActive: false
+    };
+  }
+  
   handleLogout = () => {
     
   }
@@ -32,9 +57,29 @@ class AppNavigation extends React.Component {
         <Container>
           <AppNavigationContainer>
   
+            {/* Hamburger Button */}
+            <NavHamburger onClick={() => this.setState({ mobileActive: !this.state.mobileActive })}>
+              <HamburgerLine></HamburgerLine>
+              <HamburgerLine></HamburgerLine>
+              <HamburgerLine></HamburgerLine>
+            </NavHamburger>
+            {/* End of Hamburger Button */}
+
+            {/* Mobile Navigation */}
+            {
+              this.state.mobileActive ? (
+                <MobileNavigation 
+                  toggle={() => this.setState({ mobileActive: false })}
+                />
+              ) : null
+            }
+            {/* End of Mobile Navigation */}
+            
+            {/* Navigation Header */}
             <NavHeader to="/hub">
               puntipin
             </NavHeader>
+            {/* End of Navigation Header */}
   
             <NavMain>
               <NavLeft>

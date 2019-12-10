@@ -4,9 +4,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 /**
  * Components
  */
-import AppNavigation from './components/_Shared/AppNavigation/AppNavigation';
+import AppNavigation from './components/_Shared/Navigation/AppNavigation/AppNavigation';
 import AppRouter from './router/AppRouter';
-import HomeNavigation from './components/_Shared/HomeNavigation/HomeNavigation';
+import HomeNavigation from './components/_Shared/Navigation/HomeNavigation/HomeNavigation';
 
 const App: React.FC = () => {
   return (

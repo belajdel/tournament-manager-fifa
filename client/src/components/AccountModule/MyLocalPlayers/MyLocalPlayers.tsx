@@ -19,8 +19,8 @@ import {
   CreateLocalPlayerContentRight,
   CreateLocalPlayerRight
 } from './MyLocalPlayersStyles';
-import LocalPlayerPreview from '../../_Shared/LocalPlayerPreview/LocalPlayerPreview';
-import AlphabetSearch from '../../_Shared/AlphabetSearch/AlphabetSearch';
+import LocalPlayerPreview from '../../_Shared/Buttons/LocalPlayerPreview/LocalPlayerPreview';
+import AlphabetSearch from '../../_Shared/Form/AlphabetSearch/AlphabetSearch';
 
 class MyLocalPlayers extends React.Component {
   render() {

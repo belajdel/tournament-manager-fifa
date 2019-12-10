@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { PUNTIPIN_BLUE_LIGHT, PUNTIPIN_BLUE } from '../../../../constants/COLORS';
+import { PUNTIPIN_BLUE_LIGHT, PUNTIPIN_BLUE } from '../../../../../constants/COLORS';
 
 // Link
 export const NavLink = styled(Link)`

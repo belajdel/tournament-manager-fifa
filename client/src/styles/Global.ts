@@ -5,21 +5,21 @@ export const Container = styled.div`
   /* Extra small devices (portrait phones, less than 576px) */
   /* No media query for xs since this is the default in Bootstrap */
   margin: 0 auto;
-  width: 95%;
+  max-width: 500px;
 
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
-    /* width: 90%; */
+    max-width: 700px;
   }
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    /* width: 85%; */
-    width: 90%;
+    max-width: 850px;
   }
 
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
+    max-width: 1200px;
   }
 
   /* Extra large devices (large desktops, 1200px and up) */
