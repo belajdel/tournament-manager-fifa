@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
 import { 
   PUNTIPIN_GRAY_LIGHT, 
   PUNTIPIN_BLUE, 
-  PUNTIPIN_BLUE_LIGHT,
   PRIMARY,
   SECONDARY,
   DANGER,
@@ -17,7 +17,7 @@ import ColorTypes from '../../../../models/ColorTypes';
 /**
  * Main Containers
  */
-export const PreviewButton = styled.button`
+export const PreviewLink = styled(Link)`
   align-items: center;
   background: none;
   border: none;

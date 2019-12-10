@@ -4,7 +4,6 @@ import {
 	Route
 } from 'react-router-dom';
 
-
 /**
  * Components
  */
@@ -21,6 +20,14 @@ import MyLeaderboards from '../components/LeaderboardsModule/MyLeaderboards/MyLe
 import MyTournaments from '../components/TournamentModule/MyTournaments/MyTournaments';
 import MyChannels from '../components/ChannelModule/MyChannels/MyChannels';
 import MyProfile from '../components/AccountModule/MyProfile/MyProfile';
+import Channel from '../components/ChannelModule/Channel/Channel';
+import CreateChannel from '../components/ChannelModule/CreateChannel/CreateChannel';
+import CreateTournament from '../components/TournamentModule/CreateTournament/CreateTournament';
+import Tournament from '../components/TournamentModule/Tournament/Tournament';
+import SetNewPassword from '../components/AuthenticationModule/SetNewPassword/SetNewPassword';
+import ConfirmEmail from '../components/AuthenticationModule/ConfirmEmail/ConfirmEmail';
+import UserProfile from '../components/AccountModule/UserProfile/UserProfile';
+import AddFriend from '../components/AccountModule/AddFriend/AddFriend';
 
 function AppRouter() {
 	return (
@@ -43,6 +50,10 @@ function AppRouter() {
       <Route path="/friends">
         <MyFriends />
       </Route>
+
+      <Route path="/players">
+        <MyLocalPlayers />
+      </Route>
       
       <Route path="/leaderboards">
         <MyLeaderboards />
@@ -57,32 +68,67 @@ function AppRouter() {
       </Route>
 
       {/* Other Components */}
-      
-      {/* Create Local Player */}
-      <Route path="/create">
+
+      {/* Channel */}
+      <Route path={`/channel&c=:id`}>
+        <Channel />
+      </Route>
+
+      {/* Tournament */}
+      <Route path={`/tournament&t=:id`}>
+        <Tournament />
+      </Route>
+
+      {/* User Profile */}
+      <Route path={`/user&u=:id`}>
+        <UserProfile />
+      </Route>
+
+      {/* Create Routes */}
+      <Route path="/create/local">
         <CreateLocalPlayer />
       </Route>
-      
 
-      <Route path="/local-players">
-        <MyLocalPlayers />
+      <Route path="/create/channel">
+        <CreateChannel />
       </Route>
 
+      <Route path="/create/tournament">
+        <CreateTournament />
+      </Route>
+
+      <Route path="/add">
+        <AddFriend />
+      </Route>
+      {/* End of Create Routes */}
+
+      {/* Authentication Routes */}
       <Route path="/reset-password">
         <ResetPassword />
+      </Route>
+
+      <Route path="/set-password">
+        <SetNewPassword />
+      </Route>
+
+      <Route path="/confirm-email">
+        <ConfirmEmail />
+      </Route>
+
+      <Route path="/signup">
+        <Signup />
+      </Route>
+      {/* End of Authentication Routes */}
+      
+      {/* Home Routes */}
+      <Route path="/">
+        <Home />
       </Route>
 
       <Route path="/about">
         <About />
       </Route>
-      
-      <Route path="/signup">
-        <Signup />
-      </Route>
-
-      <Route path="/">
-        <Home />
-      </Route>
+      {/* End of Home Routes */}
       
     </Switch>
 	);

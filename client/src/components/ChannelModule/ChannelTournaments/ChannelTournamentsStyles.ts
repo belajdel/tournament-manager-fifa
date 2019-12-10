@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MyChannelsContainer = styled.section`
+export const ChannelTournamentsContainer = styled.section`
   min-height: 100vh;
   padding: 20px 0;
 
@@ -13,14 +13,14 @@ export const MyChannelsContainer = styled.section`
   }
 `;
 
-export const ChannelsHeader = styled.header`
+export const TournamentsHeader = styled.header`
   background: white;
   box-shadow: 0 1px 3px #666;
   margin-bottom: 20px;
   width: 100%;
 `;
 
-export const ChannelsList = styled.section`
+export const TournamentsList = styled.section`
   background: white;
   box-shadow: 0 1px 3px #666;
   display: flex;

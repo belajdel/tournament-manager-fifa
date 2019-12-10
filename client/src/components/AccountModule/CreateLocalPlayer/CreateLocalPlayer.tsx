@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Styles
  */
-import { Container } from '../../../styles/Global';
+import { Container, Wrapper } from '../../../styles/Global';
 import {
   Button,
   CreateBox,
@@ -12,7 +12,6 @@ import {
   CreateLabel,
   CreateLabelNumber,
   CreateLabelOptional,
-  CreateLocalPlayerWrapper,
   CreateLocalPlayerContainer,
   FormFooterButtonContainer,
   Input,
@@ -25,7 +24,7 @@ import {
 class CreateLocalPlayer extends React.Component {
   render() {
     return (
-      <CreateLocalPlayerWrapper>
+      <Wrapper>
         <Container>
           <CreateLocalPlayerContainer>
   
@@ -100,7 +99,7 @@ class CreateLocalPlayer extends React.Component {
             
           </CreateLocalPlayerContainer>
         </Container>
-      </CreateLocalPlayerWrapper>
+      </Wrapper>
     );
   }
 }

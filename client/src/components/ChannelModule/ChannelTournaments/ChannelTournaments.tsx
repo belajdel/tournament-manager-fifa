@@ -7,12 +7,12 @@ import { Container, Wrapper } from '../../../styles/Global';
 import {
   TournamentsList,
   TournamentsHeader,
-  MyTournamentsContainer
-} from './MyTournamentsStyles';
+  ChannelTournamentsContainer
+} from './ChannelTournamentsStyles';
 import PreviewLinkItem from '../../_Shared/Buttons/PreviewLinkItem/PreviewLinkItem';
 import ColorTypes from '../../../models/ColorTypes';
 
-class MyTournaments extends React.Component {
+class ChannelTournaments extends React.Component {
   render() {
 
     const ChannelList = [1, 2, 3, 4, 5, 6, 7].map(a => (
@@ -22,14 +22,14 @@ class MyTournaments extends React.Component {
         buttonDescription="Last Active:"
         buttonDescriptionSecondary="Yesterday - 4:04 pm"
         buttonColor={ColorTypes.warning}
-        to={`/tournament&t=${'dsa43jfdsf'}`}
+        to={`/tournament&t=${'dasd23as'}`}
       />
     ))
     
     return (
       <Wrapper>
         <Container>
-          <MyTournamentsContainer>
+          <ChannelTournamentsContainer>
 
             <TournamentsHeader>
               <PreviewLinkItem
@@ -46,11 +46,11 @@ class MyTournaments extends React.Component {
               
             </TournamentsList>
             
-          </MyTournamentsContainer>
+          </ChannelTournamentsContainer>
         </Container>
       </Wrapper>
     );
   }
 }
 
-export default MyTournaments;
+export default ChannelTournaments;

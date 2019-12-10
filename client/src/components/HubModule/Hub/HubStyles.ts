@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { 
-  PUNTIPIN_GRAY_LIGHT, PUNTIPIN_BLUE, PUNTIPIN_BLUE_LIGHT, PUNTIPIN_GRAY_MAIN 
+  PUNTIPIN_GRAY_LIGHT, 
+  PUNTIPIN_BLUE, 
+  PUNTIPIN_BLUE_LIGHT, 
 } from '../../../constants/COLORS';
 
 export const HubContainer = styled.section`

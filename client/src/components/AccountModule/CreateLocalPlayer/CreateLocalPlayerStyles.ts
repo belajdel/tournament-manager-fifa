@@ -1,21 +1,14 @@
 import styled from 'styled-components';
 import { 
-  PUNTIPIN_GREEN, 
   PUNTIPIN_GRAY_MAIN,
   PUNTIPIN_GRAY_LIGHT, 
 } from '../../../constants/COLORS';
 
-/**
- * Main Component Container
- */
-export const CreateLocalPlayerWrapper = styled.section`
-  background: ${PUNTIPIN_GREEN};
-`;
-
 export const CreateLocalPlayerContainer = styled.section`
-  background: ${PUNTIPIN_GRAY_MAIN};
   min-height: 100vh;
   padding: 20px;
+
+  
 `;
 
 /**

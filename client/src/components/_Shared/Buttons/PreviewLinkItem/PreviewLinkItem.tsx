@@ -4,27 +4,26 @@ import React from 'react';
  * Styles
  */
 import {
-  PreviewButton,
+  PreviewLink,
   PreviewIcon,
   PreviewContentContainer,
   PreviewContentDescription,
   DescriptionSecondary
-} from './PreviewItemStyles';
+} from './PreviewLinkItemStyles';
 import ColorTypes from '../../../../models/ColorTypes';
 
-interface PreviewItemProps {
+interface PreviewLinkItemProps {
   buttonHeader: string;
   buttonDescription: string;
-  buttonDescriptionSecondary: string;
-  buttonCallback: any;
-  buttonName: string;
+  buttonDescriptionSecondary?: string;
   buttonColor: ColorTypes;
+  to: string;
 }
 
-class PreviewItem extends React.Component<PreviewItemProps> {
+class PreviewLinkItem extends React.Component<PreviewLinkItemProps> {
   render() {
     return (
-      <PreviewButton>
+      <PreviewLink to={this.props.to}>
 
         <PreviewIcon 
           buttonColor={this.props.buttonColor || null}
@@ -34,14 +33,16 @@ class PreviewItem extends React.Component<PreviewItemProps> {
           <h1>{this.props.buttonHeader}</h1>  
           
           <PreviewContentDescription>
-            { this.props.buttonDescription } <DescriptionSecondary>{this.props.buttonDescriptionSecondary}</DescriptionSecondary>
+            { this.props.buttonDescription } { this.props.buttonDescriptionSecondary && (
+              <DescriptionSecondary>{this.props.buttonDescriptionSecondary}</DescriptionSecondary>
+            )}
           </PreviewContentDescription>
             
         </PreviewContentContainer>
         
-      </PreviewButton>      
+      </PreviewLink>      
     );
   }
 }
 
-export default PreviewItem;
+export default PreviewLinkItem;

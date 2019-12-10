@@ -16,7 +16,7 @@ import {
   SearchButton,
   SearchIcon
 } from './HubStyles';
-import PreviewItem from '../../_Shared/Buttons/PreviewButton/PreviewItem';
+import PreviewLinkItem from '../../_Shared/Buttons/PreviewLinkItem/PreviewLinkItem';
 
 /**
  * Icons
@@ -35,22 +35,19 @@ class Hub extends React.Component {
 
               <HubBox>
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Create Channel"
                   buttonDescription="Get started by creating a new channel community"
-                  buttonDescriptionSecondary=""
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="Create"
                   buttonColor={ColorTypes.primary}
+                  to="/create/channel"
                 />
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Channel name"
                   buttonDescription="Last Active:"
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="View"
                   buttonColor={ColorTypes.secondary}
+                  to={`/channel&c=${'asdca8asd'}`}
                 />
 
                 <FooterButtonContainer>
@@ -63,22 +60,19 @@ class Hub extends React.Component {
 
               <HubBox>
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Create Private Tournament"
                   buttonDescription="Get started with a private tournament and local players"
-                  buttonDescriptionSecondary=""
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="Create"
                   buttonColor={ColorTypes.warning}
+                  to="/create/tournament"
                 />
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Tournament name"
                   buttonDescription="Last Active:"
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="View"
                   buttonColor={ColorTypes.danger}
+                  to={`/tournament&t=${'sad8sad83'}`}
                 />
 
                 <FooterButtonContainer>
@@ -108,67 +102,59 @@ class Hub extends React.Component {
                   </SearchButton>
                 </HubFriendSearch>
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Add friend"
                   buttonDescription="Add new friend to network of channels"
-                  buttonDescriptionSecondary=""
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="Add new"
                   buttonColor={ColorTypes.danger}
-                  />
+                  to="/add"
+                />
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Eduardo"
                   buttonDescription="Last active"
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="View profile"
                   buttonColor={ColorTypes.primary}
+                  to={`/user&u=${'sased34f'}`}
                 />
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Andres"
                   buttonDescription="Last active"
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="View profile"
                   buttonColor={ColorTypes.warning}
+                  to={`/user&u=${'sased34f'}`}
                 />
                 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Thomas"
                   buttonDescription="Last active"
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="View profile"
                   buttonColor={ColorTypes.success}
+                  to={`/user&u=${'sased34f'}`}
                 />
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Jerry"
                   buttonDescription="Last active"
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="View profile"
                   buttonColor={ColorTypes.secondary}
+                  to={`/user&u=${'sased34f'}`}
                 />
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Mandy"
                   buttonDescription="Last active"
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="View profile"
                   buttonColor={ColorTypes.link}
+                  to={`/user&u=${'sased34f'}`}
                 />
 
-                <PreviewItem
+                <PreviewLinkItem
                   buttonHeader="Nick"
                   buttonDescription="Last active"
                   buttonDescriptionSecondary="Yesterday - 4:04 pm"
-                  buttonCallback={() => console.log('Created')}
-                  buttonName="View profile"
                   buttonColor={ColorTypes.success}
+                  to={`/user&u=${'sased34f'}`}
                 />
 
                 <FooterButtonContainer>

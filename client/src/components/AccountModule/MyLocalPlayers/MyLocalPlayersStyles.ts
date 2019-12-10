@@ -1,73 +1,37 @@
 import styled from 'styled-components';
 
-export const MyLocalPlayersWrapper = styled.section`
-  background: orange;
-`;
-
 export const MyLocalPlayersContainer = styled.section`
-  background: #F4F4F4;
   min-height: 100vh;
+  padding: 20px 0;
+
+  @media (min-width: 576px) {
+    padding: 20px;
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 992px) {
+  }
 `;
 
 export const LocalPlayersHeader = styled.header`
-  background: yellow;
-  padding: 40px 0 30px 0;
-
-  & > header {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    text-align: center;
-  }
-
-  & > section {
-    
-
-  }
+  background: white;
+  box-shadow: 0 1px 3px #666;
+  margin-bottom: 20px;
+  width: 100%;
 `;
 
 export const LocalPlayersList = styled.section`
-  justify-content: center;
+  background: white;
+  box-shadow: 0 1px 3px #666;
   display: flex;
-  margin: 20px 0;
-  border: 1px solid red;
   flex-wrap: wrap;
-`;
+  padding: 10px 0 20px 0;
+  width: 100%;
 
-/**
- * Local Players Header
- */
-export const HeaderLeft = styled.div`
-
-`;
-
-export const HeaderRight = styled.div`
-
-`;
-
-export const CreateLocalPlayerContainer = styled.div`
-
-`;
-
-export const CreateLocalPlayerLeft = styled.div`
-
-`;
-
-export const CreateLocalPlayerRight = styled.div`
-
-`;
-
-export const CreateLocalPlayerContentRight = styled.div`
-
-`;
-
-export const CreateLocalPlayerIcon = styled.div`
-
-`;
-
-export const CreateLocalPlayerContent = styled.div`
-
-`;
-
-export const CreateLocalPlayerButton = styled.button`
-
+  & > * {
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      width: 50% !important;
+    }
+  }
 `;
