@@ -75,7 +75,7 @@ function AppRouter() {
       </Route>
 
       {/* Tournament */}
-      <Route path={`/tournament&t=:id`}>
+      <Route path={`/tournament`}>
         <Tournament />
       </Route>
 

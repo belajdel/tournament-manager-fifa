@@ -3,23 +3,18 @@ import React from 'react';
 /**
  * Styles
  */
-import { Wrapper, Container } from '../../../../styles/Global';
 import {
-  TournamentKnockoutStageContainer
+  TournamentKnockoutStageContainer,
 } from './TournamentKnockoutStageStyles';
 
 class TournamentKnockoutStage extends React.Component {
   render() {
     return (
-      <Wrapper>
-        <Container>
-          <TournamentKnockoutStageContainer>
+      <TournamentKnockoutStageContainer>
 
-            
-            
-          </TournamentKnockoutStageContainer>
-        </Container>
-      </Wrapper>
+        
+        
+      </TournamentKnockoutStageContainer>
     );
   }
 }

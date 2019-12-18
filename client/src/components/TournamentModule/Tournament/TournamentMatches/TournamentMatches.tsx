@@ -3,23 +3,45 @@ import React from 'react';
 /**
  * Styles
  */
-import { Wrapper, Container } from '../../../../styles/Global';
 import {
   TournamentMatchesContainer
 } from './TournamentMatchesStyles';
+import TournamentMatch from '../../_Shared/TournamentMatch/TournamentMatch';
 
 class TournamentMatches extends React.Component {
   render() {
     return (
-      <Wrapper>
-        <Container>
-          <TournamentMatchesContainer>
+      <TournamentMatchesContainer>
 
-            
-            
-          </TournamentMatchesContainer>
-        </Container>
-      </Wrapper>
+        <TournamentMatchesHeader>
+          <h1>All Matches</h1>
+        </TournamentMatchesHeader>
+
+        <TournamentMatchesContainer>
+          <TournamentMatchContainer>
+            <TournamentMatch />
+          </TournamentMatchContainer>
+          <TournamentMatchContainer>
+            <TournamentMatch />
+          </TournamentMatchContainer>
+          <TournamentMatchContainer>
+            <TournamentMatch />
+          </TournamentMatchContainer>
+          <TournamentMatchContainer>
+            <TournamentMatch />
+          </TournamentMatchContainer>
+          <TournamentMatchContainer>
+            <TournamentMatch />
+          </TournamentMatchContainer>
+          <TournamentMatchContainer>
+            <TournamentMatch />
+          </TournamentMatchContainer>
+          <TournamentMatchContainer>
+            <TournamentMatch />
+          </TournamentMatchContainer>
+        </TournamentMatchesContainer>
+        
+      </TournamentMatchesContainer>
     );
   }
 }

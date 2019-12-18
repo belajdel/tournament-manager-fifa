@@ -3,23 +3,52 @@ import React from 'react';
 /**
  * Styles
  */
-import { Wrapper, Container } from '../../../../styles/Global';
 import {
-  TournamentGroupStageContainer
+  TournamentGroupStageContainer,
 } from './TournamentGroupStageStyles';
+import TournamentTable from '../../_Shared/TournamentTable/TournamentTable';
 
 class TournamentGroupStage extends React.Component {
   render() {
     return (
-      <Wrapper>
-        <Container>
-          <TournamentGroupStageContainer>
+      <TournamentGroupStageContainer>
+
+        <GroupStageHeader>
+          <h1>Group Stage</h1>
+        </GroupStageHeader>
+
+        <GroupStageContent>
+          <ContentLeft>
+
+            <TableContainer>
+              <h1>Group A</h1>
+              <TournamentTable />
+            </TableContainer>
+
+            <TableContainer>
+              <h1>Group B</h1>
+              <TournamentTable />
+            </TableContainer>
+
+            <TableContainer>
+              <h1>Group C</h1>
+              <TournamentTable />
+            </TableContainer>
+
+            <TableContainer>
+              <h1>Group D</h1>
+              <TournamentTable />
+            </TableContainer>
+
+          </ContentLeft>
+          <ContentRight>
 
             
             
-          </TournamentGroupStageContainer>
-        </Container>
-      </Wrapper>
+          </ContentRight>
+        </GroupStageContent>
+        
+      </TournamentGroupStageContainer>
     );
   }
 }
