@@ -3,19 +3,17 @@ import React from 'react';
 /**
  * Components
  */
-import CreateStepHeader from '../../../_Shared/CreateStepHeader/CreateStepHeader';
-import CreateTournamentKnockoutStage from './CreateTournamentKnockoutStage/CreateTournamentKnockoutStage';
-import CreateTournamentGroupStage from './CreateTournamentGroupStage/CreateTournamentGroupStage';
+import CreateStepHeader from '../../../../_Shared/CreateStepHeader/CreateStepHeader';
 
 /**
  * Icons
  */
-import TournamentIcon from '../../../../assets/icons/icon-hub.png';
+import TournamentIcon from '../../../../../assets/icons/icon-hub.png';
 
 /**
  * Styles
  */
-import { StepContent } from '../CreateTournamentStyles';
+import { StepContent } from '../../CreateTournamentStyles';
 import {
   StepFourContainer,
   TournamentButtonList,

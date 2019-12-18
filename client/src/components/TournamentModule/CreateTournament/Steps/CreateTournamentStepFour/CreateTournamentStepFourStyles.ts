@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PUNTIPIN_BLUE } from '../../../../constants/COLORS';
+import { PUNTIPIN_BLUE } from '../../../../../constants/COLORS';
 
 export const StepFourContainer = styled.section`
 

@@ -3,14 +3,14 @@ import React from 'react';
 /**
  * Components
  */
-import CreateStepHeader from '../../../_Shared/CreateStepHeader/CreateStepHeader';
-import PreviewLinkItem from '../../../_Shared/Buttons/PreviewLinkItem/PreviewLinkItem';
+import CreateStepHeader from '../../../../_Shared/CreateStepHeader/CreateStepHeader';
+import PreviewLinkItem from '../../../../_Shared/Buttons/PreviewLinkItem/PreviewLinkItem';
 
 /**
  * Icons
  */
-import IconDelete from '../../../../assets/icons/icon-delete.png';
-import IconEmail from '../../../../assets/icons/icon-email.png';
+import IconDelete from '../../../../../assets/icons/icon-delete.png';
+import IconEmail from '../../../../../assets/icons/icon-email.png';
 
 /**
  * Styles
@@ -42,12 +42,12 @@ import {
   NumberAdded,
   NumberAddedStrong,
 } from './CreateTournamentStepThreeStyles';
-import {} from '../CreateTournamentStyles';
+import {} from '../../CreateTournamentStyles';
 
 /**
  * Types
  */
-import ColorTypes from '../../../../models/ColorTypes';
+import ColorTypes from '../../../../../models/ColorTypes';
 
 class CreateTournamentStepThree extends React.Component {
   render() {

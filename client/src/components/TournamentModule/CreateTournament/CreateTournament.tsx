@@ -3,12 +3,12 @@ import React from 'react';
 /**
  * Components
  */
-import CreateTournamentStepOne from './CreateTournamentStepOne/CreateTournamentStepOne';
-import CreateTournamentStepTwo from './CreateTournamentStepTwo/CreateTournamentStepTwo';
-import CreateTournamentStepThree from './CreateTournamentStepThree/CreateTournamentStepThree';
-import CreateTournamentStepFour from './CreateTournamentStepFour/CreateTournamentStepFour';
-import CreateTournamentStepFive from './CreateTournamentStepFive/CreateTournamentStepFive';
-import CreateTournamentStepSix from './CreateTournamentStepSix/CreateTournamentStepSix';
+import CreateTournamentStepOne from './Steps/CreateTournamentStepOne/CreateTournamentStepOne';
+import CreateTournamentStepTwo from './Steps/CreateTournamentStepTwo/CreateTournamentStepTwo';
+import CreateTournamentStepThree from './Steps/CreateTournamentStepThree/CreateTournamentStepThree';
+import CreateTournamentStepFour from './Steps/CreateTournamentStepFour/CreateTournamentStepFour';
+import CreateTournamentStepFive from './Steps/CreateTournamentStepFive/CreateTournamentStepFive';
+import CreateTournamentStepSix from './Steps/CreateTournamentStepSix/CreateTournamentStepSix';
 
 /**
  * Styles
@@ -69,7 +69,7 @@ class CreateTournament extends React.Component<CreateTournamentProps, CreateTour
             
             {/* Step Six */}
             <CreateTournamentStepSix />
-            
+
           </CreateTournamentContainer>
         </Container>
       </Wrapper>

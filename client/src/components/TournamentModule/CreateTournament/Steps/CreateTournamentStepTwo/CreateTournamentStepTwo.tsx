@@ -3,7 +3,7 @@ import React from 'react';
 /**
  * Component
  */
-import CreateStepHeader from '../../../_Shared/CreateStepHeader/CreateStepHeader';
+import CreateStepHeader from '../../../../_Shared/CreateStepHeader/CreateStepHeader';
 
 /**
  * Styles
@@ -14,7 +14,7 @@ import {
 } from './CreateTournamentStepTwoStyles';
 import {
   StepContent
-} from '../CreateTournamentStyles';
+} from '../../CreateTournamentStyles';
 
 class CreateTournamentStepTwo extends React.Component {
   

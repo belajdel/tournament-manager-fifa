@@ -3,7 +3,9 @@ import React from 'react';
 /**
  * Components
  */
-import CreateStepHeader from '../../../_Shared/CreateStepHeader/CreateStepHeader';
+import CreateStepHeader from '../../../../_Shared/CreateStepHeader/CreateStepHeader';
+import CreateTournamentKnockoutStage from '../../CreateTournamentKnockoutStage/CreateTournamentKnockoutStage';
+import CreateTournamentGroupStage from '../../CreateTournamentGroupStage/CreateTournamentGroupStage';
 
 /**
  * Styles
@@ -13,7 +15,7 @@ import {
 } from './CreateTournamentStepFiveStyles';
 import {
   StepContent,
-} from '../CreateTournamentStyles';
+} from '../../CreateTournamentStyles';
 
 class CreateTournamentStepFive extends React.Component {
   render() {
@@ -27,7 +29,10 @@ class CreateTournamentStepFive extends React.Component {
 
         <StepContent>
 
-          
+          {/* <CreateTournamentKnockoutStage /> */}
+
+          <CreateTournamentGroupStage />
+        
         </StepContent>
 
       </StepFiveContainer>
