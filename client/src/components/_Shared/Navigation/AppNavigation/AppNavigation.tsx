@@ -7,8 +7,19 @@ import NavItem from './NavItem/NavItem';
 import AccountNavigation from '../AccountNavigation/AccountNavigation';
 
 /**
+ * Icons
+ */
+import HubIcon from '../../../../assets/icons/icon-hub.png';
+import ChannelsIcon from '../../../../assets/icons/icon-channels.png';
+import FriendsIcon from '../../../../assets/icons/icon-friends.png';
+import LeaderboardsIcon from '../../../../assets/icons/icon-leaderboards-1.png';
+import TournamentsIcon from '../../../../assets/icons/icon-tournaments.png';
+import MobileNavigation from '../MobileNavigation/MobileNavigation';
+
+/**
  * Styles
  */
+import { Container } from '../../../../styles/Global';
 import {
   AppNavigationWrapper,
   AppNavigationContainer,
@@ -19,17 +30,6 @@ import {
   NavHamburger,
   HamburgerLine,
 } from './AppNavigationStyles';
-import { Container } from '../../../../styles/Global';
-
-/**
- * Icons
- */
-import HubIcon from '../../../../assets/icons/icon-hub.png';
-import ChannelsIcon from '../../../../assets/icons/icon-channels.png';
-import FriendsIcon from '../../../../assets/icons/icon-friends.png';
-import LeaderboardsIcon from '../../../../assets/icons/icon-leaderboards-1.png';
-import TournamentsIcon from '../../../../assets/icons/icon-tournaments.png';
-import MobileNavigation from '../MobileNavigation/MobileNavigation';
 
 interface AppNavigationProps {
 

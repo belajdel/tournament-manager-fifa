@@ -3,12 +3,12 @@ import React from 'react';
 /**
  * Styles
  */
-import { Wrapper, Container } from '../../../../styles/Global';
+import { Wrapper, Container } from '../../../../../styles/Global';
 import {
   KnockoutStageContainer
-} from './KnockoutStageStyles';
+} from './CreateTournamentKnockoutStageStyles';
 
-class KnockoutStage extends React.Component {
+class CreateTournamentKnockoutStage extends React.Component {
   render() {
     return (
       <Wrapper>
@@ -24,4 +24,4 @@ class KnockoutStage extends React.Component {
   }
 }
 
-export default KnockoutStage;
+export default CreateTournamentKnockoutStage;

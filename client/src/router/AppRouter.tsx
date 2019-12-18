@@ -85,15 +85,15 @@ function AppRouter() {
       </Route>
 
       {/* Create Routes */}
-      <Route path="/create/local">
+      {/* <Route path="/create/local">
         <CreateLocalPlayer />
-      </Route>
+      </Route> */}
 
-      <Route path="/create/channel">
+      {/* <Route path="/create">
         <CreateChannel />
-      </Route>
+      </Route> */}
 
-      <Route path="/create/tournament">
+      <Route path="/create">
         <CreateTournament />
       </Route>
 

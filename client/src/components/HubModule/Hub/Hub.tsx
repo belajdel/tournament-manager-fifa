@@ -39,7 +39,7 @@ class Hub extends React.Component {
                   buttonHeader="Create Channel"
                   buttonDescription="Get started by creating a new channel community"
                   buttonColor={ColorTypes.primary}
-                  to="/create/channel"
+                  to="/create"
                 />
 
                 <PreviewLinkItem
@@ -51,7 +51,7 @@ class Hub extends React.Component {
                 />
 
                 <FooterButtonContainer>
-                  <FooterButton>
+                  <FooterButton to="/channels">
                     View All
                   </FooterButton>
                 </FooterButtonContainer>
@@ -76,7 +76,7 @@ class Hub extends React.Component {
                 />
 
                 <FooterButtonContainer>
-                  <FooterButton>
+                  <FooterButton to="/tournaments">
                     View All
                   </FooterButton>
                 </FooterButtonContainer>
@@ -158,7 +158,7 @@ class Hub extends React.Component {
                 />
 
                 <FooterButtonContainer>
-                  <FooterButton>
+                  <FooterButton to="/friends">
                     View All
                   </FooterButton>
                 </FooterButtonContainer>

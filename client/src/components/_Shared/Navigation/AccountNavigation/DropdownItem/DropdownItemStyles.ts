@@ -18,8 +18,8 @@ export const Item = styled.div`
 
 export const ItemIcon = styled.img`
   display: block;
-  height: 28px;
-  width: 28px;
+  height: 22px;
+  width: 22px;
 `;
 
 export const ItemTitle = styled.h1`
@@ -27,6 +27,6 @@ export const ItemTitle = styled.h1`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
-  padding: 8px 10px;
+  padding: 4px 10px;
   margin-left: 8px;
 `;

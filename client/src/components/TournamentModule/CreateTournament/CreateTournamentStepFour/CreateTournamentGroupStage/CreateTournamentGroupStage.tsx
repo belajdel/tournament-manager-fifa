@@ -3,19 +3,18 @@ import React from 'react';
 /**
  * Styles
  */
-import { Wrapper, Container } from '../../../../styles/Global';
+import { Wrapper, Container } from '../../../../../styles/Global';
 import {
   GroupStageContainer
-} from './GroupStageStyles';
+} from './CreateTournamentGroupStageStyles';
 
-class GroupStage extends React.Component {
+class CreateTournamentGroupStage extends React.Component {
   render() {
     return (
       <Wrapper>
         <Container>
           <GroupStageContainer>
 
-            
             
           </GroupStageContainer>
         </Container>
@@ -24,4 +23,4 @@ class GroupStage extends React.Component {
   }
 }
 
-export default GroupStage;
+export default CreateTournamentGroupStage;

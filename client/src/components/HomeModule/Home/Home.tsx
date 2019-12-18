@@ -8,6 +8,7 @@ import SignupForm from '../_Shared/SignupForm/SignupForm';
 /**
  * Styles
  */
+import { Container } from '../../../styles/Global';
 import { 
   HomeContainer,
   JumbotronContainer, 
@@ -16,9 +17,8 @@ import {
   JumbotronHeader,
   JumbotronDetails
 } from './HomeStyles';
-import { Container } from '../../../styles/Global';
 
-const Home: React.FC = () => {
+const Home: React.FC = (props) => {
   return (
     <HomeContainer>
       <Container>  

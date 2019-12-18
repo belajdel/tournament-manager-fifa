@@ -4,6 +4,7 @@ import {
   PUNTIPIN_BLUE, 
   PUNTIPIN_BLUE_LIGHT, 
 } from '../../../constants/COLORS';
+import { Link } from 'react-router-dom';
 
 export const HubContainer = styled.section`
   min-height: 100vh;
@@ -54,7 +55,7 @@ export const FooterButtonContainer = styled.div`
   margin: 20px auto;
 `;
 
-export const FooterButton = styled.button`
+export const FooterButton = styled(Link)`
   align-items: center;
   background: ${PUNTIPIN_BLUE};
   border: none;
@@ -62,6 +63,7 @@ export const FooterButton = styled.button`
   display: flex;
   color: white;
   cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   padding: 10px 16px;
 
