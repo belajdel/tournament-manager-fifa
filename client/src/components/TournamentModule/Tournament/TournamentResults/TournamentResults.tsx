@@ -1,10 +1,35 @@
 import React from 'react';
 
 /**
+ * Icons
+ */
+import TrophyIcon from '../../../../assets/tournament-icons/icon-trophy.png';
+
+/**
  * Styles
  */
 import {
-  TournamentResultsContainer
+  TournamentResultsContainer,
+  TournamentResultsHeader,
+  TournamentResultsContent,
+  HeaderRow,
+  HeaderLeft,
+  HeaderRight,
+  HeaderIconContainer,
+  HeaderIcon,
+  TournamentTitle,
+  TournamentStatus,
+  StatusIcon,
+  TournamentType,
+  TournamentTypeDesc,
+  TournamentDetails,
+  TournamentStat,
+  StatNumber,
+  PlacingRow,
+  PlaceItem,
+  ItemIcon,
+  FooterRow,
+  FooterButton,
 } from './TournamentResultsStyles';
 
 class TournamentResults extends React.Component {
@@ -19,31 +44,50 @@ class TournamentResults extends React.Component {
         <TournamentResultsContent>
 
           <HeaderRow>
-          <HeaderLeft>
-              <HeaderIcon />
+
+            <HeaderLeft>
+              <HeaderIconContainer>
+                <HeaderIcon 
+                  src={TrophyIcon}
+                />
+              </HeaderIconContainer>
             </HeaderLeft>
+
+            {/* [Header Right] */}
             <HeaderRight>
               <TournamentTitle>
                 Tournament Name <TournamentStatus><StatusIcon /></TournamentStatus>
               </TournamentTitle>
+
               <TournamentType>
                 Type: <TournamentTypeDesc>Group</TournamentTypeDesc>
               </TournamentType>
+
+              {/* Tournament Details [Stats] */}
               <TournamentDetails>
+
                 <TournamentStat>
-                  <TournamentStatNumber>6</TournamentStatNumber> members
+                  <StatNumber>6</StatNumber> members
                 </TournamentStat>
+
                 <TournamentStat>
-                  <TournamentStatNumber>9<TournamentStatNumber> players
+                  <StatNumber>9</StatNumber> players
                 </TournamentStat>
+                
                 <TournamentStat>
-                  <TournamentStatNumber>61</TournamentStatNumber> matches played
+                  <StatNumber>61</StatNumber> matches played
                 </TournamentStat>
+
                 <TournamentStat>
-                  <TournamentStatNumber>67</TournamentStatNumber> goals scored
+                  <StatNumber>67</StatNumber> goals scored
                 </TournamentStat>
+                
               </TournamentDetails>
+              {/* End of Tournament Details [Stats] */}
+
             </HeaderRight>
+            {/* [End of Header Right] */}
+            
           </HeaderRow>
           
           <PlacingRow>

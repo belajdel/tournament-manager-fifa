@@ -39,12 +39,12 @@ class TournamentMatch extends React.Component {
             <ScoreHeader>
               <HomeScoreInput 
                 placeholder="#"
-                type="number"
+                type="text"
               />
               <p>vs.</p>
               <VisitingScoreInput 
                 placeholder="#"
-                type="number"
+                type="text"
               />
             </ScoreHeader>
             <ScoreFooter>

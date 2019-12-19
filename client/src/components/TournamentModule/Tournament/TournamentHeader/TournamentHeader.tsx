@@ -11,6 +11,7 @@ import TrophyIcon from '../../../../assets/tournament-icons/icon-trophy.png';
 import {
   TournamentHeaderContainer,
   HeaderLeft,
+  LeftIconContainer,
   LeftIcon,
   LeftContent,
   TournamentType,
@@ -28,6 +29,7 @@ import {
   RightPlacing,
   PlaceItem,
   PlaceIcon,
+  SettingsIconContainer,
   SettingsButton,
   SettingsIcon,
 } from './TournamentHeaderStyles';
@@ -38,23 +40,31 @@ class TournamentHeader extends React.Component {
       <TournamentHeaderContainer>
 
         <HeaderLeft>
-          <LeftIcon 
-            src={TrophyIcon}
-          />
+          
+          <LeftIconContainer>
+            <LeftIcon 
+              src={TrophyIcon}
+            />
+          </LeftIconContainer>
+          
           <LeftContent>
             <h1>Tournament name</h1>
+            
             <TournamentType>
               Type: <TournamentTypeDesc>Group</TournamentTypeDesc>
             </TournamentType>
+
+            <LeftFooter>
+              <TournamentParticipants>
+                <ParticipantsNumber>6</ParticipantsNumber> members
+              </TournamentParticipants>
+              <TournamentParticipants>
+                <ParticipantsNumber>9</ParticipantsNumber> players
+              </TournamentParticipants>
+            </LeftFooter>
+            
           </LeftContent>
-          <LeftFooter>
-            <TournamentParticipants>
-              <ParticipantsNumber>6</ParticipantsNumber> members
-            </TournamentParticipants>
-            <TournamentParticipants>
-              <ParticipantsNumber>9</ParticipantsNumber> players
-            </TournamentParticipants>
-          </LeftFooter>
+          
         </HeaderLeft>
 
         <HeaderCenter>
@@ -79,6 +89,7 @@ class TournamentHeader extends React.Component {
         </HeaderCenter>
 
         <HeaderRight>
+
           <RightHeader>
             <DateTitle>
               Created On: <DateDesc>September 25, 2017</DateDesc>
@@ -87,23 +98,30 @@ class TournamentHeader extends React.Component {
               Last Modified: <DateDesc>September 25, 2017</DateDesc>
             </DateTitle>
           </RightHeader>
+          
           <RightPlacing>
+            
             <PlaceItem>
               <PlaceIcon />
               <h1>1st Place</h1>
             </PlaceItem>
+            
             <PlaceItem>
               <PlaceIcon />
               <h1>2nd Place</h1>
             </PlaceItem>
+            
             <SettingsButton>
-              <SettingsIcon 
-                alt="settingsIcon"
-                src={TrophyIcon}
-              />
+              <SettingsIconContainer>
+                <SettingsIcon 
+                  alt="settingsIcon"
+                  src={TrophyIcon}
+                />
+              </SettingsIconContainer>
               <h1>Settings</h1>
             </SettingsButton>
           </RightPlacing>
+
         </HeaderRight>
         
       </TournamentHeaderContainer>

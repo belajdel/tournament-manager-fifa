@@ -1,45 +1,62 @@
 import React from 'react';
 
 /**
+ * Components
+ */
+import TournamentMatch from '../../_Shared/TournamentMatch/TournamentMatch';
+
+/**
  * Styles
  */
 import {
-  TournamentMatchesContainer
+  TournamentMatchesContainer,
+  MatchesHeader,
+  MatchesContentContainer,
+  TournamentMatchContainer,
 } from './TournamentMatchesStyles';
-import TournamentMatch from '../../_Shared/TournamentMatch/TournamentMatch';
 
 class TournamentMatches extends React.Component {
   render() {
     return (
       <TournamentMatchesContainer>
 
-        <TournamentMatchesHeader>
+        <MatchesHeader>
           <h1>All Matches</h1>
-        </TournamentMatchesHeader>
+        </MatchesHeader>
 
-        <TournamentMatchesContainer>
+        {/* Matches Content */}
+        <MatchesContentContainer>
+
           <TournamentMatchContainer>
             <TournamentMatch />
           </TournamentMatchContainer>
+
           <TournamentMatchContainer>
             <TournamentMatch />
           </TournamentMatchContainer>
+
           <TournamentMatchContainer>
             <TournamentMatch />
           </TournamentMatchContainer>
+
           <TournamentMatchContainer>
             <TournamentMatch />
           </TournamentMatchContainer>
+
           <TournamentMatchContainer>
             <TournamentMatch />
           </TournamentMatchContainer>
+
           <TournamentMatchContainer>
             <TournamentMatch />
           </TournamentMatchContainer>
+
           <TournamentMatchContainer>
             <TournamentMatch />
           </TournamentMatchContainer>
-        </TournamentMatchesContainer>
+
+        </MatchesContentContainer>
+        {/* End of Matches Content */}
         
       </TournamentMatchesContainer>
     );

@@ -1,12 +1,23 @@
 import React from 'react';
 
 /**
+ * Components
+ */
+import TournamentMatch from '../../_Shared/TournamentMatch/TournamentMatch';
+import TournamentTable from '../../_Shared/TournamentTable/TournamentTable';
+
+/**
  * Styles
  */
 import {
   TournamentGroupStageContainer,
+  GroupStageHeader,
+  GroupStageContent,
+  ContentLeft,
+  ContentRight,
+  TableContainer,
+  MatchContainer,
 } from './TournamentGroupStageStyles';
-import TournamentTable from '../../_Shared/TournamentTable/TournamentTable';
 
 class TournamentGroupStage extends React.Component {
   render() {
@@ -43,7 +54,15 @@ class TournamentGroupStage extends React.Component {
           </ContentLeft>
           <ContentRight>
 
-            
+            <MatchContainer>
+              <h1>Next Match</h1>
+              <TournamentMatch />
+            </MatchContainer>
+
+            <MatchContainer>
+                <h1>Previous Match</h1>
+              <TournamentMatch />
+            </MatchContainer>
             
           </ContentRight>
         </GroupStageContent>

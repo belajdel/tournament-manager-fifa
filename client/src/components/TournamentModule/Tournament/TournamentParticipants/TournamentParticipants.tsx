@@ -1,12 +1,24 @@
 import React from 'react';
 
 /**
+ * Components
+ */
+import PreviewLinkItem from '../../../_Shared/Buttons/PreviewLinkItem/PreviewLinkItem';
+
+/**
  * Styles
  */
 import {
-  TournamentParticipantsContainer
+  TournamentParticipantsContainer,
+  TournamentParticipantsHeader,
+  TournamentParticipantsContent,
+  ParticipantsLeftContainer,
+  ParticipantsRightContainer,
 } from './TournamentParticipantsStyles';
-import PreviewLinkItem from '../../../_Shared/Buttons/PreviewLinkItem/PreviewLinkItem';
+
+/**
+ * Types
+ */
 import ColorTypes from '../../../../models/ColorTypes';
 
 class TournamentParticipants extends React.Component {
