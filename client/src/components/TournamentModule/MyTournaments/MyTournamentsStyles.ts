@@ -35,3 +35,35 @@ export const TournamentsList = styled.section`
     }
   }
 `;
+
+/**
+ * Newly added
+ */
+/**
+ * Select Dropdown
+ */
+export const SelectLeague = styled.select`
+  background: white;
+  border-radius: 5px;
+  border: 1px solid ${PUNTIPIN_GRAY_LIGHT};
+  font-size: 15px;
+  padding: 10px;
+  width: 350px;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const LeagueOption = styled.option`
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+`;
+
+
+export const InputContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+`;

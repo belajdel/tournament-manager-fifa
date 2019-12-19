@@ -49,7 +49,6 @@ export const BoxHeader = styled.h1`
 /**
  * Input
  */
-
 export const InputContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -144,7 +143,6 @@ export const ChangePasswordButton = styled(Button)`
     background: ${PUNTIPIN_BLUE_LIGHT};
   }
 `;
-
 
 /**
  * Select Dropdown
