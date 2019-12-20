@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import { 
+  PUNTIPIN_GRAY_LIGHT, 
+  PUNTIPIN_BLUE 
+} from '../../../constants/COLORS';
 
 export const MyTournamentsContainer = styled.section`
   min-height: 100vh;
@@ -37,12 +41,33 @@ export const TournamentsList = styled.section`
 `;
 
 /**
- * Newly added
+ * [Query Menu]
  */
+export const TournamentsQueryContainer = styled.section`
+  background: white;
+  display: flex;
+  padding: 16px 0;
+  margin-bottom: 20px;
+
+  & > * {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 50%;
+  }
+`;
+
+export const QueryLeftContainer = styled.section`
+`;
+
+export const QueryRightContainer = styled.section`
+`;
+
 /**
  * Select Dropdown
  */
-export const SelectLeague = styled.select`
+export const SelectInput = styled.select`
   background: white;
   border-radius: 5px;
   border: 1px solid ${PUNTIPIN_GRAY_LIGHT};
@@ -55,15 +80,48 @@ export const SelectLeague = styled.select`
   }
 `;
 
-export const LeagueOption = styled.option`
-  background: white;
-  margin-bottom: 10px;
-  padding: 10px;
+export const InputOption = styled.option`
 `;
 
 
 export const InputContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+`;
+
+/**
+ * [Search Input]
+ */
+export const QuerySearchInputContainer = styled.div`
+  background: ${PUNTIPIN_BLUE};
+  border-radius: 2px;
+  display: flex;
+`;
+
+
+export const SearchInputIconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+`;
+
+export const SearchInputIcon = styled.img`
+  display: block;
+  height: 20px;
+  width: 20px;
+`;
+
+export const QuerySearchInput = styled.input`
+  border: 1px solid #CCC;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  min-width: 350px;
+  
+  &:focus {
+    outline: none;
+  }
 `;

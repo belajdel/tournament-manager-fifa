@@ -3,7 +3,6 @@ import React from 'react';
 /**
  * Styles
  */
-import { Wrapper, Container } from '../../../styles/Global';
 import {
   ChannelLeaderboardsContainer
 } from './ChannelLeaderboardsStyles';
@@ -11,15 +10,11 @@ import {
 class ChannelLeaderboards extends React.Component {
   render() {
     return (
-      <Wrapper>
-        <Container>
-          <ChannelLeaderboardsContainer>
+      <ChannelLeaderboardsContainer>
 
-            
-            
-          </ChannelLeaderboardsContainer>
-        </Container>
-      </Wrapper>
+        
+        
+      </ChannelLeaderboardsContainer>
     );
   }
 }

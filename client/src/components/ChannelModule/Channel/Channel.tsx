@@ -1,32 +1,57 @@
 import React from 'react';
 
 /**
+ * Components
+ */
+import ChannelNavigation from '../../_Shared/Navigation/ChannelNavigation/ChannelNavigation';
+import ChannelHome from './ChannelHome/ChannelHome';
+import ChannelParticipants from './ChannelParticipants/ChannelParticipants';
+import ChannelLeaderboards from './ChannelLeaderboards/ChannelLeaderboards';
+import ChannelTournaments from './ChannelTournaments/ChannelTournaments';
+import ChannelSettings from './ChannelSettings/ChannelSettings';
+
+/**
  * Styles
  */
-import { Container } from '../../../styles/Global';
+import { Container, Wrapper } from '../../../styles/Global';
 import {
   ChannelContainer,
-  ChannelWrapper,
+  ChannelContent
 } from './ChannelStyles';
-import ChannelNavigation from '../../_Shared/Navigation/ChannelNavigation/ChannelNavigation';
 
 class Channel extends React.Component {
   render() {
     return (
-      <ChannelWrapper>
-
-        <ChannelNavigation />
-        
+      <Wrapper>
         <Container>
-        </Container>
-        
           <ChannelContainer>
 
-            {/* Channel Navigation */}
-            
+            {/* Main [Channel Navigation] */}
+            <ChannelNavigation />
+
+            {/* Channel Components */}
+            <ChannelContent>
+
+              {/* Home */}
+              {/* <ChannelHome /> */}
+
+              {/* Participants */}
+              <ChannelParticipants />
+
+              {/* Leaderboards */}
+              {/* <ChannelLeaderboards /> */}
+
+              {/* Tournaments */}
+              {/* <ChannelTournaments /> */}
+              
+              {/* Settings */}
+              {/* <ChannelSettings /> */}
+              
+            </ChannelContent>
 
           </ChannelContainer>
-      </ChannelWrapper>
+          </Container>
+      </Wrapper>
     );
   }
 }

@@ -6,20 +6,35 @@ import React from 'react';
 import PreviewTournamentLinkItem from '../../_Shared/Buttons/PreviewTournamentLinkItem/PreviewTournamentLinkItem';
 
 /**
+ * Icons
+ */
+import SearchIcon from '../../../assets/icons/icon-search.png';
+
+/**
  * Styles
  */
 import { Container, Wrapper } from '../../../styles/Global';
 import {
   TournamentsList,
   TournamentsHeader,
-  MyTournamentsContainer
+  MyTournamentsContainer,
+  TournamentsQueryContainer,
+  QueryLeftContainer,
+  QueryRightContainer,
+  QuerySearchInput,
+  InputContainer,
+  SelectInput,
+  InputOption,
+  QuerySearchInputContainer,
+  SearchInputIconContainer,
+  SearchInputIcon,
 } from './MyTournamentsStyles';
-
 
 /**
  * Types
  */
 import ColorTypes from '../../../models/ColorTypes';
+import PreviewLinkItem from '../../_Shared/Buttons/PreviewLinkItem/PreviewLinkItem';
 
 class MyTournaments extends React.Component {
   render() {
@@ -41,7 +56,7 @@ class MyTournaments extends React.Component {
           <MyTournamentsContainer>
 
             <TournamentsHeader>
-              <PreviewTournamentLinkItem
+              <PreviewLinkItem
                   buttonHeader="Create Tournament"
                   buttonDescription="Get started by creating a new tournament"
                   buttonColor={ColorTypes.secondary}
@@ -54,44 +69,54 @@ class MyTournaments extends React.Component {
               <QueryLeftContainer>
 
               <InputContainer>
-                <SelectLeague>
-                  <LeagueOption value="premierLeague">
-                    England Premier League
-                  </LeagueOption>
-                  <LeagueOption value="laLiga">
+                <SelectInput>
+                  <InputOption value="premierLeague">
+                    Sort by
+                  </InputOption>
+                  <InputOption value="laLiga">
                     Spain La Liga
-                  </LeagueOption>
-                  <LeagueOption value="serieA">
+                  </InputOption>
+                  <InputOption value="serieA">
                     Italy Serie A
-                  </LeagueOption>
-                  <LeagueOption value="bundesliga">
+                  </InputOption>
+                  <InputOption value="bundesliga">
                     Germany 1. Bundesliga
-                  </LeagueOption>
-                  <LeagueOption value="ligueOne">
+                  </InputOption>
+                  <InputOption value="ligueOne">
                     France Ligue 1
-                  </LeagueOption>
-                  <LeagueOption value="ligaNOS">
+                  </InputOption>
+                  <InputOption value="ligaNOS">
                     Portugal Liga NOS
-                  </LeagueOption>
-                  <LeagueOption value="eredivisie">
+                  </InputOption>
+                  <InputOption value="eredivisie">
                     Holland Eredivisie
-                  </LeagueOption>
-                  <LeagueOption value="MLS">
+                  </InputOption>
+                  <InputOption value="MLS">
                     USA MLS
-                  </LeagueOption>
-                  <LeagueOption value="ligaMX">
+                  </InputOption>
+                  <InputOption value="ligaMX">
                     Mexico Liga MX
-                  </LeagueOption>
-                </SelectLeague>
+                  </InputOption>
+                </SelectInput>
               </InputContainer>
                   
               </QueryLeftContainer>
 
               <QueryRightContainer>
-                <QuerySearchInput
-                  placeholder="Search for a tournament"
-                  type="text"
-                />
+                
+                <QuerySearchInputContainer>
+                  <SearchInputIconContainer>
+                    <SearchInputIcon 
+                      alt=""
+                      src={SearchIcon}
+                    />
+                  </SearchInputIconContainer>
+                  <QuerySearchInput
+                    placeholder="Search for a tournament"
+                    type="text"
+                  />
+                </QuerySearchInputContainer>
+                
               </QueryRightContainer>
 
             </TournamentsQueryContainer>

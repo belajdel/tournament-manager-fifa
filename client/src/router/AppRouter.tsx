@@ -89,9 +89,9 @@ function AppRouter() {
         <CreateLocalPlayer />
       </Route> */}
 
-      {/* <Route path="/create">
+      <Route path="/create">
         <CreateChannel />
-      </Route> */}
+      </Route>
 
       <Route path="/create">
         <CreateTournament />

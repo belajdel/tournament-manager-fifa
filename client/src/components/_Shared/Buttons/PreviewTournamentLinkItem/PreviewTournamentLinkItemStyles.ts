@@ -11,19 +11,23 @@ import {
   INFO,
   LIGHT,
   DARK,
+  PUNTIPIN_BLUE_LIGHT,
 } from '../../../../constants/COLORS';
+
+/**
+ * Types
+ */
 import ColorTypes from '../../../../models/ColorTypes';
 
 /**
  * Main Containers
  */
 export const PreviewLink = styled(Link)`
-  align-items: center;
   background: none;
   border: none;
   cursor: pointer;
   border-bottom: 1px solid ${PUNTIPIN_GRAY_LIGHT};
-  display: flex;
+  display: block;
   padding: 10px 16px;
   width: 100%;
 
@@ -35,6 +39,25 @@ export const PreviewLink = styled(Link)`
     outline: none;
   }
 `;
+
+/**
+ * [Row]
+ */
+const PreviewRow = styled.div`
+  padding-left: 10px;
+  padding-right: 10px;
+`;
+
+export const HeaderRow = styled(PreviewRow)`
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+`;
+
+export const FooterRow = styled(PreviewRow)`
+  padding-bottom: 10px;
+`;
+
 
 /**
  * Main Content
@@ -61,10 +84,9 @@ export const PreviewIcon = styled.div`
 `;
 
 export const PreviewContentContainer = styled.header`
-  flex: 1;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 16px;
   padding: 4px 0;
   text-align: left;
 
@@ -83,4 +105,32 @@ export const PreviewContentDescription = styled.p`
 
 export const DescriptionSecondary = styled.span`
   color: ${PUNTIPIN_BLUE};
+`;
+
+/**
+ * [Members List]
+ */
+export const MembersHeader = styled.header`
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+  padding: 10px 0 4px 0;
+  text-align: center;
+`;
+
+export const MembersList = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const MemberItem = styled(Link)`
+  background: ${PUNTIPIN_BLUE_LIGHT};
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 4px;
+  padding: 4px 10px;
+  text-align: center;
+  width: 50%;
 `;

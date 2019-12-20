@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const ChannelWrapper = styled.section`
-
+export const ChannelContainer = styled.section`
+  background: white;
+  min-height: 100vh;
 `;
 
-export const ChannelContainer = styled.section`
-
+export const ChannelContent = styled.section`
 `;

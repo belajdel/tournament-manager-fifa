@@ -11,24 +11,13 @@ export const ContentContainer = styled.div``;
 
 export const ContentRow = styled.div``;
 
+/**
+ * [First Row]
+ */
 export const FirstRow = styled(ContentRow)`
   display: flex;
 `;
 
-export const SecondRow = styled(ContentRow)``;
-
-export const ThirdRow = styled(ContentRow)`
-  background: #F4F4F4;
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  margin: 20px 0;
-  align-items: center;
-`;
-
-/**
- * [First Row]
- */
 export const AddMembersLeftContainer = styled.div`
   flex: 1;
 `;
@@ -67,6 +56,8 @@ export const MembersListContainer = styled.div`
 /**
  * [Second Row]
  */
+export const SecondRow = styled(ContentRow)``;
+
 export const PlayersAddedHeader = styled.h1`
   padding: 20px;
   font-weight: bold;
@@ -82,26 +73,30 @@ export const PlayersAddedContent = styled.section`
 
 export const PlayersAddedLeftContainer = styled.section`
   flex: 1;
+  padding: 20px;
 `;
 
 export const PlayersAddedRightContainer = styled.section`
   flex: 1;
+  padding: 20px;
 `;
 
 /**
  * [Player Added]
  */
-export const PlayersAdded = styled.div`
-
+export const PlayersAdded = styled.button`
+  background: #F4F4F4;
   display: flex;
+  width: 100%;
+  cursor: pointer;
   align-items: center;
-  padding: 10px;
+  padding: 16px;
   margin-bottom: 16px;
   border: 1px solid #CCC;
   border-radius: 2px;
 `;
 
-export const PlayersAddedButton = styled.button`
+export const PlayersAddedButton = styled.div`
   background: none;
   border: none;
   display: block;
@@ -110,8 +105,8 @@ export const PlayersAddedButton = styled.button`
 
 export const RequestButtonIcon = styled.img`
   display: block;
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
 `;
 
 export const PlayersAddedEmail = styled.p`
@@ -123,16 +118,31 @@ export const PlayersAddedEmail = styled.p`
  * Input Container
  */
 export const PlayersAddedInputBox = styled.div`
-
+  align-items: center;
+  display: flex;
+  padding: 10px;
 `;
 
 export const PlayersAddedInput = styled.input`
   display: block;
+  border: 1px solid #CCC;
+  background: white;
+  padding: 10px;
+  width: 100%;
 `;
 
 /**
  * [Row 3]
  */
+export const ThirdRow = styled(ContentRow)`
+  background: #F4F4F4;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 20px 0;
+  align-items: center;
+`;
+
 const NumberPlayersDesc = styled.p`
   color: red;
   font-size: 15px;
@@ -147,14 +157,14 @@ export const Max = styled(NumberPlayersDesc)`
 `;
 
 export const NumberAdded = styled.h1`
-  font-size: 36px;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 `;
 
 export const NumberAddedStrong = styled.span`
+  color: red;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 44px;
-  color: red;
   font-weight: bold;
 `;

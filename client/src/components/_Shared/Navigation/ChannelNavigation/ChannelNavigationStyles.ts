@@ -4,6 +4,7 @@ import { PUNTIPIN_BLUE } from '../../../../constants/COLORS';
 
 export const ChannelNavigationWrapper = styled.section`
   background: #F4F4F4;
+  padding: 0 20px;
 `;
 
 export const ChannelNavigationContainer = styled.nav`

@@ -229,17 +229,20 @@ class CreateTournamentStepThree extends React.Component {
 
                 {/* Request Member Input */}
                 <PlayersAddedInputBox>
+                  
                   <PlayersAddedButton>
                     <RequestButtonIcon
                       alt="requestIcon"
                       src={IconEmail}
                     />
                   </PlayersAddedButton>
+                  
                   <PlayersAddedInput 
                     id="inviteRequest"
                     placeholder="Add email address"
                     type="text"
                   />
+                  
                 </PlayersAddedInputBox>
 
               </PlayersAddedRightContainer>

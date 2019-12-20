@@ -3,6 +3,7 @@ import React from 'react';
 /**
  * Styles
  */
+import { Container } from '../../../../styles/Global';
 import {
   ChannelNavigationWrapper,
   ChannelNavigationContainer,
@@ -17,7 +18,6 @@ import {
  * Icons
  */
 import Icon from '../../../../assets/icons/icon-account.png';
-import { Container } from '../../../../styles/Global';
 
 interface ChannelNavigationProps {
 }
